@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <ul>
+            <li>
+                <a href="#" routerLink="home" routerLinkActive="active">home</a>
+            </li>
+            <li>
+                <a href="#" routerLink="game" routerLinkActive="active">game</a>
+            </li>
+        </ul>
+    </header>
+    
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer></footer>
+
+    <script src="lib/HttpClient.js"></script>
+    <script src="lib/Router.js"></script>
+    <script src="lib/ComponentWorker.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
