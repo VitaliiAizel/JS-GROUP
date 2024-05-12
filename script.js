@@ -3,22 +3,25 @@ document.addEventListener("DOMContentLoaded", () => onInit());
 const AvailableRoutes = [
     {
         route: 'home',
-        componentName: 'home-page',
-        componentPath: 'app/HomePage'
+        component: 'app-home',
     },
     {
         route: 'game',
-        componentName: 'game-page',
-        componentPath: 'app/GamePage'
+        component: 'app-game',
     },
     {
         route: '**',
-        componentName: 'not-found-page',
-        componentPath: 'app/NotFoundPage'
+        component: 'app-not-found',
     }
 ];
 
 function onInit() {
+    // Components
+    ComponentWorker.register('app-home', '/app/HomePage', 'home-page.component');
+    ComponentWorker.register('app-game', '/app/GamePage', 'game-page.component');
+    ComponentWorker.register('app-not-found', '/app/NotFoundPage', 'not-found-page.component');
+
+    // Router
     window.AvailableRoutes = AvailableRoutes;
     Router.loadComponent('home');
 }
