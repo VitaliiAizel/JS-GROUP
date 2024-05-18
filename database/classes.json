@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "img": "link",
+        "title": "Death Knight",
+        "description": "Description 1",
+        "guides": [
+            {
+                "id": 1,
+                "img": "",
+                "title": "Guide 1",
+                "description": "Description 1",
+                "strengths": [
+                    {
+                        "id": 1,
+                        "description": "Description 1"
+                    }
+                ],
+                "weaknesses": [
+                    {
+                        "id": 1,
+                        "description": "Description 1"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "img": "",
+                "title": "Guide 2",
+                "description": "Description 1",
+                "strengths": [
+                    {
+                        "id": 1,
+                        "description": "Description 1"
+                    }
+                ],
+                "weaknesses": [
+                    {
+                        "id": 1,
+                        "description": "Description 1"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "img": "",
+                "title": "Guide 3",
+                "description": "Description 1",
+                "strengths": [
+                    {
+                        "id": 1,
+                        "description": "Description 1"
+                    }
+                ],
+                "weaknesses": [
+                    {
+                        "id": 1,
+                        "description": "Description 1"
+                    }
+                ]
+            }
+        ]
+    }
+]

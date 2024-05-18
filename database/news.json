@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "img": "",
+        "title": "Title 1",
+        "description": "Description 1",
+        "isBreaking": false
+    },
+    {
+        "id": 1,
+        "img": "",
+        "title": "Title 2",
+        "description": "Description 1",
+        "isBreaking": true
+    }
+]
