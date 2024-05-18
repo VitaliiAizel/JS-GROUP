@@ -1,63 +1,57 @@
 [
     {
         "id": 1,
-        "img": "link",
+        "img": "https://wowvendor.com/app/uploads/2023/12/thumb-63.jpg",
         "title": "Death Knight",
-        "description": "Description 1",
+        "description": "Death Knights engage their foes up-close, supplementing swings of their weapons with dark magic that renders enemies vulnerable or damages them with unholy power. They drag foes into one-on-one conflicts, compelling them to focus their attacks away from weaker companions. To prevent their enemies from fleeing their grasp, death knights must remain mindful of the power they call forth from runes, and pace their attacks appropriately. Death Knights can tank in the Blood specialization, or DPS as Frost and Unholy.",
         "guides": [
             {
                 "id": 1,
-                "img": "",
-                "title": "Guide 1",
-                "description": "Description 1",
-                "strengths": [
-                    {
-                        "id": 1,
-                        "description": "Description 1"
-                    }
-                ],
-                "weaknesses": [
-                    {
-                        "id": 1,
-                        "description": "Description 1"
-                    }
-                ]
+                "img": "https://overgear.com/guides/wp-content/uploads/2023/11/blood-death-knight-guide-e1700844258502.png",
+                "title": "Blood Death Knight",
+                "description": "As one of the six tank specializations in the game, our design as Blood Death Knights involves a reactive, optimization-driven playstyle: generating as much Runic Power as possible through spells and abilities, prioritizing the right one at the right time, and healing the damage you take back up with  Death Strike. Our toolkit breadth holds a variety of answers for many situations, ranging from self-sustain cooldowns such as  Vampiric Blood and  Dancing Rune Weapon, immunities to specific mechanics, a combat resurrection for allies, and even a pet ghoul acting as a source of DPS thanks to  Raise Dead!\n\nBlood Death Knights are designed to excel in fights where damage is very high but not lethal; a large portion of our kit scales off damage taken, allowing us to heal for more and more as the damage taken gets higher. Obviously, this has a limit (when you die), but in the hands of a skilled player, this specialization is a force to be reckoned with.\n\nOverall, we are the jack-of-all-trades tank. We have answers to everything, although they may not be the most powerful answers individually. We bring a temporary immunity to magic debuffs and curses, a combat ress, and hands-down the best slow in the game ( Grip of the Dead).\n\nAs the original hero class, Death Knights start at level 8 rather than level 1. All races from both the Horde and the Alliance can be Death Knights. If you like deep, engaging gameplay as a tank, and a rotation that truly rewards clever planning, we strongly encourage you to give Blood a try!",
+                "strengths": "Excellent self-sustain when played optimally\nUnique group utility:  Anti-Magic Zone,  Death Grip,  Gorefiend's Grasp\nTemporary immunity to Charm, Fear and Sleep effects ( Lichborne), Stuns ( Icebound Fortitude)\nKnockback immunity ( Death's Advance\nAbility to immune most magic debuffs and curses with  Anti-Magic Shell\nTwo separate taunts:  Dark Command,  Death Grip\nAn AoE disorient on a very short cooldown ( Blinding Sleet)\nUndead-only crowd control:  Control Undead\nAccess to an uncapped cheat death:  Purgatory",
+                "weaknesses": "Lower damage than most tanks\nA significant portion of our damage is tied to us getting meleed by enemies\nLimited mobility:  Death's Advance baseline, with two potential talents to augment this:\n Death's Echo to gain a second charge of  Death's Advance\n Wraith Walk\nWe are tuned around taking higher amounts of damage upfront and healing it back. This leaves us open to being bursted down without being able to, well, heal it up. You can't heal when you're dead.\nIn Dragonflight, the design of the spec severely punishes mistakes, but the punishment has no immediate feedback."
             },
             {
                 "id": 2,
-                "img": "",
-                "title": "Guide 2",
-                "description": "Description 1",
-                "strengths": [
-                    {
-                        "id": 1,
-                        "description": "Description 1"
-                    }
-                ],
-                "weaknesses": [
-                    {
-                        "id": 1,
-                        "description": "Description 1"
-                    }
-                ]
+                "img": "https://pm1.aminoapps.com/6117/96a390fb70e137eedd1b85f3aba0b6e751a02e58_00.jpg",
+                "title": "Frost Death Knight",
+                "description": "Frost Death Knight is a 2-hand/dual-wield, plate wearer DPS specialisation focusing on physical and magical damage. We can guarantee critical hits on our primary damage-dealing ability  Obliterates with  Killing Machine, breathe ice on our enemies with  Breath of Sindragosa and  Frostwyrm's Fury, and engulf our enemies in a blizzard with  Remorseless Winter. We focus heavily on cleave damage that does not cost single-target damage, excelling in 3 target cleave.\n\nNew Frost Death Knights start at level 8 instead of level 1 since we are a hero class. All races can play Frost Death Knights except the Dracthyr. Frost Death Knight is a spec for players that like big hits, heavy cleave and rewarding cooldowns.",
+                "strengths": "Cleave ability - We have very strong Cleave burst windows.\nCan run an AoE setup without losing much Single Target damage.\nAwesome Survivability - Great survivability, one of the tankiest specs out there.\nRunning around as a mini Lich King feels great.",
+                "weaknesses": "Susceptible to random forced downtime, especially when playing with  Breath of Sindragosa.\nGenerally a slow spec that doesn't have many options for movement speed increase.\nLacks utility in Mythic+."
             },
             {
                 "id": 3,
-                "img": "",
-                "title": "Guide 3",
-                "description": "Description 1",
-                "strengths": [
-                    {
-                        "id": 1,
-                        "description": "Description 1"
-                    }
-                ],
-                "weaknesses": [
-                    {
-                        "id": 1,
-                        "description": "Description 1"
-                    }
-                ]
+                "img": "https://pics.craiyon.com/2023-05-27/e600083c19f94939a3fe984419704c77.webp",
+                "title": "Unholy Death Knight",
+                "description": "Unholy Death Knight is a 2-hand, plate wearer dps specialization that focuses on diseases, pets and shadow damage. We summon armies of undead minions, infect our enemies with multiple different plagues and blow up packs of enemies in shadow damage. We are generally a very bursty spec both in Single Target and AoE.\n\nNew Unholy Death Knights start at level 8 instead of level 1 since we are a hero class. All races can play Unholy Death Knights except the Dracthyr. Unholy Death Knight is a spec for players that like big burst, lots of cooldowns and rewarding AoE game play.",
+                "strengths": "AoE ability - We have very strong AoE burst windows.\nInitial Burst -We have the strongest opening burst of any spec in the game.\nGreat Survivability - We have a ton of active and passive defensive abilities that help us survive.",
+                "weaknesses": "Target-Switching - Due to long set-up and ramp-up times for our single target damage, we have trouble changing targets on the fly.\nLow Mobility - Along with Paladins, DKs are now one of the slowest melee classes in the game in general.\nLow Mythic+ Utility - We lack many of the tools that make other classes wanted in Mythic+ environments."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "img": "https://overgear.com/guides/wp-content/uploads/2023/12/havoc-demon-hunter-e1703783483559-825x510.png",
+        "title": "Demon Hunter",
+        "description": "Forgoing heavy armor, Demon Hunters capitalize on speed, closing the distance quickly to strike enemies with one-handed weapons. However, Illidari must also use their agility defensively to ensure that battles end favorably.\n\nDemon Hunters can DPS as the Havoc specialization, or tank as Vengeance.",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://wowcarry.com/image/cache/catalog/d_blog_module/post/generated/updated-demon-hunter-class-guides-for-102-rework-talent-positions-new-talents-650x430.jpg",
+                "title": "Havoc Demon Hunter",
+                "description": "Havoc Demon Hunter is a dual-wielding, leather wearing dps specialization with a mix of short AoE cooldowns, consistent DPS, and high mobility. In single target our damage is highly cooldown based, but for cleave and AoE it is more consistent relying on shorter rolling cooldowns with almost always something to hit.\n\nNew Demon Hunters will start at level 8 rather than level 1 due to being a hero class, and are restricted to being either Blood Elf if Horde or Night Elf if Alliance. Havoc Demon Hunter is a spec that is good for players who enjoy high mobility dps with great self sustain.\n",
+                "strengths": "Powerful burst on a short cooldown.\nStrong and frequently usable cooldowns.\nExceptional self-sustain healing.\nGreat passive Magic Damage Reduction.\nConsistent AoE damage.\nExcellent solo capabilities.\nFrequent insane mobility.\nBrings  Chaos Brand, a debuff increasing magical damage taken that is provided only by Demon Hunters,",
+                "weaknesses": "Significant threat issues in AoE despite  Scars of Suffering.\n Metamorphosis does not work as a proper AoE cooldown.\n Momentum and similar talents can put you in precarious situations from mobility usage.\nMelee.\nLack of talent options to commit to pure Single Target dps."
+            },
+            {
+                "id": 2,
+                "img": "https://static.icy-veins.com/images/wow/class-guides/og-image-demon-hunter.jpg",
+                "title": "Vengeance Demon Hunter",
+                "description": "Vengeance Demon Hunter is a dual-wielding, leather wearing tank specialization with a mix of damage reduction, self-healing, and high mobility and enemy control. While we are not fully based around preventing damage like Protection Warriors, our toolkit does allow us to reduce significant amounts of damage. In addition, we are one of the two specs that can heal based on damage taken, the other being Blood Death Knights.\n\nNew Demon Hunters will start at level 8 rather than level 1 due to being a hero class, and are restricted to being either Blood Elf if Horde or Night Elf if Alliance. Vengeance Demon Hunter is a spec that is good for players who enjoy high mobility tanks with self-sustain.",
+                "strengths": "Powerful opening burst, allowing for snap aggro.\nFrequently usable cooldowns.\nWell-rounded healing and damage reduction abilities.\nClose to immortal against Physical damage in AoE situations due to high avoidance from natural dodge, parry, and  Illuminated Sigils.\nConsistent damage.\nExcellent solo capabilities.\nPrecise and frequent mobility.\nCan cancel knockbacks with  Glide.\nBrings  Chaos Brand, a debuff increasing magical damage taken that is provided only by Demon Hunters,",
+                "weaknesses": "Multiple different defensives that must be juggled rather than one primary mitigation that is maintained consistently unlike other tank specs.\nDefensives are primarily short duration, requiring a good understanding of when to overlap and when to chain them.\nDebuff based defensives mean no universal Damage Reduction abilities ( Fiery Brand,  Frailty,  Sigil of Flame require targets).\nHealing does not work on environmental damage."
             }
         ]
     }
