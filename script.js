@@ -25,11 +25,11 @@ const AvailableRoutes = [
 
 function onInit() {
     // Components
-    ComponentWorker.register('app-home', '/app/Home', 'home.component');
-    ComponentWorker.register('app-guide', '/app/Guide', 'guide.component');
-    ComponentWorker.register('app-guide-more', '/app/GuideMore', 'guide-more.component');
-    ComponentWorker.register('app-game', '/app/Game', 'game.component');
-    ComponentWorker.register('app-faq', '/app/Faq', 'faq.component');
+    ComponentCreator.register('app-home', '/app/Home', 'home.component');
+    ComponentCreator.register('app-guide', '/app/Guide', 'guide.component');
+    ComponentCreator.register('app-guide-more', '/app/GuideMore', 'guide-more.component');
+    ComponentCreator.register('app-game', '/app/Game', 'game.component');
+    ComponentCreator.register('app-faq', '/app/Faq', 'faq.component');
 
     // Router
     window.AvailableRoutes = AvailableRoutes;

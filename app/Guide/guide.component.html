@@ -14,7 +14,7 @@
                 <div class="class-title">{{classes.title}}</div>
                 <div class="class-description">{{classes.description}}</div>
                 <div class="class-guides">
-                    <a ngFor="guides" routerLink="guide/more">{{guides.title}}</a>
+                    <a ngFor="guides" routerLink="guide/more" routerParams="[id: {{classes.id}}, guideId: {{guides.id}}]">{{guides.title}}</a>
                 </div>
             </div>
         </div>
