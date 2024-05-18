@@ -6,20 +6,30 @@ const AvailableRoutes = [
         component: 'app-home',
     },
     {
+        route: 'guide',
+        component: 'app-guide',
+    },
+    {
+        route: 'guide/more',
+        component: 'app-guide-more',
+    },
+    {
         route: 'game',
         component: 'app-game',
     },
     {
-        route: '**',
-        component: 'app-not-found',
+        route: 'faq',
+        component: 'app-faq',
     }
 ];
 
 function onInit() {
     // Components
-    ComponentWorker.register('app-home', '/app/HomePage', 'home-page.component');
-    ComponentWorker.register('app-game', '/app/GamePage', 'game-page.component');
-    ComponentWorker.register('app-not-found', '/app/NotFoundPage', 'not-found-page.component');
+    ComponentWorker.register('app-home', '/app/Home', 'home.component');
+    ComponentWorker.register('app-guide', '/app/Guide', 'guide.component');
+    ComponentWorker.register('app-guide-more', '/app/GuideMore', 'guide-more.component');
+    ComponentWorker.register('app-game', '/app/Game', 'game.component');
+    ComponentWorker.register('app-faq', '/app/Faq', 'faq.component');
 
     // Router
     window.AvailableRoutes = AvailableRoutes;
