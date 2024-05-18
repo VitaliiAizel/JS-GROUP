@@ -9,12 +9,12 @@
 
     <div class="content">
         <div class="class" ngFor="classes">
-            <img src="{{img}}" loading="lazy" class="class-img">
+            <img src="{{classes.img}}" loading="lazy" class="class-img">
             <div class="class-content">
-                <div class="class-title">{{title}}</div>
-                <div class="class-description">{{description}}</div>
+                <div class="class-title">{{classes.title}}</div>
+                <div class="class-description">{{classes.description}}</div>
                 <div class="class-guides">
-                    <a ngFor="guides" routerLink="guide/more">{{title}}</a>
+                    <a ngFor="guides" routerLink="guide/more">{{guides.title}}</a>
                 </div>
             </div>
         </div>
