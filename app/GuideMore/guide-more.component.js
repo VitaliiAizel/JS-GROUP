@@ -1,10 +1,8 @@
 await HttpClient.getJson('database/classes.json').then((data) => {
-    if (
-        data && 
-        data[window.routerParams.id - 1 || 0] && 
-        data[window.routerParams.id - 1 || 0].guides[window.routerParams.guideId - 1 || 0]
-    ) {
-        const guide = data[window.routerParams.id - 1].guides[window.routerParams.guideId - 1];
+    if (data) {
+        const guides = data.find((c) => c.id === window.routerParams.id).guide;
+        const guide = guides.find((c) => c.id === window.routerParams.guideId);
+        
         console.log(guide);
     }
 
