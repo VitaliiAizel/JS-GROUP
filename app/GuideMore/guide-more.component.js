@@ -1,9 +1,11 @@
 await HttpClient.getJson('database/classes.json').then((data) => {
     if (data) {
-        const guides = data.find((c) => c.id === window.routerParams.id).guide;
-        const guide = guides.find((c) => c.id === window.routerParams.guideId);
-        
-        console.log(guide);
+        const _class = data.find((c) => c.id === window.routerParams.id);
+        if (_class) {
+            const guide = _class.guides.find((c) => c.id === window.routerParams.guideId);
+
+            console.log(guide);
+        }
     }
 
     ComponentWorker.interpolate(
