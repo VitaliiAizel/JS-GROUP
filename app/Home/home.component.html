@@ -4,11 +4,11 @@
     </div>
 
     <div class="content">
-        <div class="news breaking-{{isBreaking}}" ngFor="news">
-            <img src="{{img}}" loading="lazy" class="news-img">
+        <div class="news breaking-{{news.isBreaking}}" ngFor="news">
+            <img src="{{news.img}}" loading="lazy" class="news-img">
             <div class="news-info">
-                <div class="news-title">{{title}}</div>
-                <div class="news-description">{{description}}</div>
+                <div class="news-title">{{news.title}}</div>
+                <div class="news-description">{{news.description}}</div>
             </div>
         </div>
     </div>
