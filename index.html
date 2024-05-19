@@ -13,41 +13,7 @@
 </head>
 <body>
     
-    <header class="header">
-        <div class="header-logo" routerLink="home">
-            <img src="./img/logo.png" class="header-img" alt="Logo">
-        </div>
-    
-        <nav class="header-nav">
-            <button id="hamburger-btn"></button>
-            <ul id="header-ul">
-                <li class="header-li">
-                    <a routerLink="home" routerLinkActive="active" class="ul-link">
-                        Головна
-                    </a>
-                </li>
-                <li class="header-li">
-                    <a routerLink="guide" routerLinkActive="active" class="ul-link">
-                        Гайди
-                    </a>
-                </li>
-                <li class="header-li">
-                    <a routerLink="game" routerLinkActive="active" class="ul-link">
-                        Розваги
-                    </a>
-                </li>
-                <li class="header-li faq">
-                    <a routerLink="faq" routerLinkActive="active" class="ul-link">
-                        FAQ
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    
-        <div class="header-faq" routerLink="faq" routerLinkActive="active">
-            <img src="./img/FAQ.png" class="header-img" alt="Faq">
-        </div>
-    </header>
+    <app-header></app-header>
     
     <main>
         <router-outlet></router-outlet>
