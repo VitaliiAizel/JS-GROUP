@@ -49,15 +49,18 @@
     flex: 1;
     object-fit: cover;
     max-width: 33vw;
+    min-height: 200px;
+    max-height: 500px;
 }
 .class-content{
     padding: 16px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: space-between;
+    flex: 1;
 
     min-height: 200px;
-    max-height: 33vh;
+    max-height: 500px;
     
     overflow-y: auto;
 }
