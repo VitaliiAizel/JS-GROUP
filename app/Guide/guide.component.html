@@ -2,8 +2,10 @@
     <div class="header">
         <h2 class="header-title">Гайди</h2>
         <div class="header-search">
-            <img src="./img/search.png" class="header-search__img">
-            <input id="search" type="text" placeholder="Пошук" class="header-search__input">
+            <label for="search" class="header-label">
+                <img src="./img/search.png" class="header-search__img">
+            </label>
+            <input id="search" type="text" placeholder="Пошук" class="header-search__input" autocomplete="off">
         </div>
     </div>
 
@@ -11,8 +13,10 @@
         <div class="class" ngFor="classes" groupName="{{classes.title}}">
             <img src="{{classes.img}}" loading="lazy" class="class-img">
             <div class="class-content">
-                <div class="class-title">{{classes.title}}</div>
-                <div class="class-description">{{classes.description}}</div>
+                <div class="class-group">
+                    <div class="class-title">{{classes.title}}</div>
+                    <div class="class-description">{{classes.description}}</div>
+                </div>
                 <div class="class-guides">
                     <a ngFor="guides" routerLink="guide/more" routerParams="[id: {{classes.id}}, guideId: {{guides.id}}]">{{guides.title}}</a>
                 </div>

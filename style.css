@@ -12,5 +12,12 @@ body {
 }
 
 main {
+    padding: 32px 64px;
     flex: 1;
+}
+
+@media (max-width: 576px) {
+    main {
+        padding: 16px 32px;
+    }
 }

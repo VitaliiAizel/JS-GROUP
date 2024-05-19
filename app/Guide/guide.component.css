@@ -1,39 +1,148 @@
-.wrapper{
-
-}
 .header{
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
+
 .header-title{
-
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.header-search{
 
+.header-search{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gray);
+    border-radius: 100px;
+    border: 1px solid var(--gray);
+    padding: 8px;
+    cursor: text;
 }
 .header-search__img{
-
+    width: 24px;
+    height: 24px;
+    cursor: text;
 }
+
 .header-search__input{
-
+    margin-left: 8px;
+    outline: none;
+    color: var(--white);
 }
+
 .content{
-
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
+
 .class{
-
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gray);
 }
-.class-img{
 
+.class-img{
+    flex: 1;
+    object-fit: cover;
+    max-width: 33vw;
 }
 .class-content{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+    min-height: 200px;
+    max-height: 33vh;
+    
+    overflow-y: auto;
 }
+
+.class-content::-webkit-scrollbar {
+    width: 4px;
+}
+  
+.class-content::-webkit-scrollbar-track {
+    background: #474747;
+}
+  
+.class-content::-webkit-scrollbar-thumb {
+    background: #ACACAC;
+}
+  
+.class-content::-webkit-scrollbar-thumb:hover {
+    background: #333232;
+}
+
 .class-title{
-
+    font-size: 1.25rem;
+    font-weight: bold;
 }
+
 .class-description{
+    margin-top: 16px;
+    opacity: 0.75;
+    line-height: 125%;
+}
+
+.class-guides{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 
 }
-.class-guides{
 
+.class-guides a {
+    color: var(--yellow);
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 4px 0;
+
+    word-break: break-all;
+}
+
+@media (max-width: 768px) {
+    .class {
+        flex-direction: column;
+    }
+
+    .class-content{
+        min-height: 200px;
+        max-height: 100vh;
+    }
+    
+    .class-img {
+        max-width: 100vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header-label {
+        display: none;
+    }
+
+    .header-search {
+        width: 100%;
+    }
+
+    .class-description{
+        font-size: 0.75rem;
+    }
+    
+    .class-guides a {
+        font-size: 0.8rem;
+    }
 }
