@@ -5,7 +5,8 @@ const components = [
     { name: 'app-guide', path: '/app/Guide', component: 'guide.component' },
     { name: 'app-guide-more', path: '/app/GuideMore', component: 'guide-more.component' },
     { name: 'app-game', path: '/app/Game', component: 'game.component' },
-    { name: 'app-faq', path: '/app/Faq', component: 'faq.component' }
+    { name: 'app-faq', path: '/app/Faq', component: 'faq.component' },
+    { name: 'app-header', path: '/app/Header', component: 'header.component' },
 ];
 
 const availableRoutes = [
