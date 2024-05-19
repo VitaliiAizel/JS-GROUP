@@ -1,11 +1,33 @@
-h3 {
-    color: red;
-}
+.wrapper{
 
-.foo {
-    color: green;
 }
+.header{
 
-#test {
-    color: gray;
+}
+.header-title{
+
+}
+.content{
+
+}
+.news{
+
+}
+.breaking-true{
+
+}
+.breaking-false{
+
+}
+.news-img{
+
+}
+.news-info{
+
+}
+.news-title{
+
+}
+.news-description{
+
 }
