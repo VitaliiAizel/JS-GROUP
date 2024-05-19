@@ -6,7 +6,6 @@ const components = [
     { name: 'app-guide-more', path: '/app/GuideMore', component: 'guide-more.component' },
     { name: 'app-game', path: '/app/Game', component: 'game.component' },
     { name: 'app-faq', path: '/app/Faq', component: 'faq.component' },
-    { name: 'app-header', path: '/app/Header', component: 'header.component' },
 ];
 
 const availableRoutes = [
@@ -26,4 +25,22 @@ function onInit() {
     // Router
     window.availableRoutes = availableRoutes;
     Router.loadComponent('home');
+
+    // Binds
+    bindHeader();
+}
+
+function bindHeader() {
+    const hamburgerButton = document.getElementById("hamburger-btn");
+    if (hamburgerButton) {
+        hamburgerButton.addEventListener("click", () => {
+            const ul = document.getElementById("header-ul");
+
+            if (ul) {
+                ul.classList.toggle("active");
+                hamburgerButton.classList.toggle("active");
+            }
+
+        });
+    }
 }
