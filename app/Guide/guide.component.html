@@ -3,12 +3,12 @@
         <h2 class="header-title">Гайди</h2>
         <div class="header-search">
             <img src="#" class="header-search__img">
-            <input type="text" placeholder="Пошук" class="header-search__input">
+            <input id="search" type="text" placeholder="Пошук" class="header-search__input">
         </div>
     </div>
 
     <div class="content">
-        <div class="class" ngFor="classes">
+        <div class="class" ngFor="classes" groupName="{{classes.title}}">
             <img src="{{classes.img}}" loading="lazy" class="class-img">
             <div class="class-content">
                 <div class="class-title">{{classes.title}}</div>
