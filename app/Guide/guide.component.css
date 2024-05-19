@@ -107,6 +107,10 @@
     word-break: break-all;
 }
 
+.class-guides a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .class {
         flex-direction: column;
