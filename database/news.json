@@ -1,16 +1,20 @@
 [
     {
         "id": 1,
-        "img": "",
+        "img": "https://skycoach.gg/storage/uploads/blog-posts/213/images/213_1693508306_900x700.png",
         "title": "Title 1",
-        "description": "Description 1",
-        "isBreaking": false
+        "description": "Description 1"
     },
     {
-        "id": 1,
-        "img": "",
+        "id": 2,
+        "img": "https://skycoach.gg/storage/uploads/blog-posts/213/images/213_1693508306_900x700.png",
         "title": "Title 2",
-        "description": "Description 1",
-        "isBreaking": true
+        "description": "Description 1"
+    },
+    {
+        "id": 3,
+        "img": "https://skycoach.gg/storage/uploads/blog-posts/213/images/213_1693508306_900x700.png",
+        "title": "Title 3",
+        "description": "Description 1"
     }
 ]

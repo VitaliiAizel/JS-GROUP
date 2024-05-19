@@ -1,10 +1,8 @@
 <div class="wrapper">
-    <div class="header">
-        <h2 class="header-title">Новини</h2>
-    </div>
+    <h2 class="title">Новини</h2>
 
     <div class="content">
-        <div class="news breaking-{{news.isBreaking}}" ngFor="news">
+        <div class="news" ngFor="news">
             <img src="{{news.img}}" loading="lazy" class="news-img">
             <div class="news-info">
                 <div class="news-title">{{news.title}}</div>
