@@ -198,6 +198,11 @@
         color: var(--white);
     }
 
+    body:has(#header-ul.active) {
+        min-height: 1px !important; 
+        overflow: hidden !important;
+    }
+
     body:has(#header-ul.active) > main {
         height: 1px !important; 
         overflow: hidden !important;
