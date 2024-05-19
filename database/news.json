@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "img": "https://skycoach.gg/storage/uploads/blog-posts/213/images/213_1693508306_900x700.png",
-        "title": "Title 1",
-        "description": "Description 1"
+        "img": "https://wow.zamimg.com/uploads/blog/images/41435-perma-fear-trolls-in-isle-of-thunder-as-a-dps-warrior-in-pandaria-remix.jpg",
+        "title": "Perma Fear Trolls in Isle of Thunder as a DPS Warrior in Pandaria Remix",
+        "description": "With trolls becoming once again relevant during Pandaria Remix, Warrior players have noticed some accidental, if hilarious, utility!\n\nThe Arms Warrior Legion Artifact, Strom'kar, the Warbreaker Strom'kar, the Warbreaker, has a secondary hidden effect -  Surrounded by Trolls! generates an aura of fear on trolls, forcing them to run away in fear from you. This effect applies even if you're just transmogging a Strom'kar appearance but not actually wearing the weapon.\n\nThis weapon can be transmogged by both Arms and Fury Warriors (Fury Warriors will need to look for Strom'kar under the 2H Sword appearance section).\n\nDuring Remix: Mists of Pandaria, this effect sees renewed utility, as Throne of Thunder is one of the areas in which this effect is activated! It goes as far as working on raid bosses themselves - Below, we have a few seconds of the Council of Elders fight in Throne of Thunder."
     },
     {
         "id": 2,
-        "img": "https://skycoach.gg/storage/uploads/blog-posts/213/images/213_1693508306_900x700.png",
-        "title": "Title 2",
-        "description": "Description 1"
+        "img": "https://wow.zamimg.com/uploads/blog/images/41323-blizzard-responds-to-priests-voidweaver-feedback.jpg",
+        "title": "Blizzard Responds to Priest's Voidweaver Feedback",
+        "description": "Blizzard has responded to feedback regarding the Priest Hero Talent Tree, Voidweaver! Blizzard:\nThe Voidweaver changes in today’s Alpha build are experimental and were aimed at trying to resolve an issue where Void Torrent was required to make the hero talent tree work.\nWe hear you that the gameplay isn’t as smooth with spawning an Entropic Rift from Shadow Crash, and we will likely move it back to spawning from Void Torrent.\nOn Shadow Crash firing at your target instead of using a reticle: this was also an experimental change, and if we do end up moving forward with this change in place, we will provide an option to players to use a reticle through a choice node."
     },
     {
         "id": 3,
         "img": "https://skycoach.gg/storage/uploads/blog-posts/213/images/213_1693508306_900x700.png",
-        "title": "Title 3",
-        "description": "Description 1"
+        "title": "May 10th Hotfixes - Warlock Inferno Scaling, Taivan Awoos, Double Blue Silken Lining",
+        "description": "Blizzard has published their hotfixes for May 10th, which include the removal from Inferno scaling beyond 5 targets, Taivan will once again awoos when summoned, and double Blue Silken Lining will once again work. Blizzard\nView Original\nMay 10, 2024\nClasses\nWarlock\nFixed an issue where the scaling of Inferno would become reduced when Rain of Fire affected more than 5 targets.\nDungeons\nDawn of the Infinite end bosses should now drop Awakened Crests.\nMounts\nTaivan awoos when summoned, like a good boy.\nNon-player Characters\nKessa, the Personal Tabard Vendor located in Valdrakken should now be available to all alts after completing the questline to unlock the personal tabard.\nProfessions\nTailoring\nFixed a bug where Blue Silken Lining was not granting more mastery for equipping a second item embellished with Blue Silken Lining while the buff was already active.\nQuests\nFixed a bug preventing the completion of “Lotus Tea” after completing “The Pools of Youth”.\nFixed an issue preventing progress on the quest “Get My Results!”.\nPlayers can now call for aid while mounted on the quest “At the Source”."
     }
 ]
