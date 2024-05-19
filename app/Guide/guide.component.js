@@ -13,10 +13,10 @@ if (search) {
         const value = e.target.value.toLowerCase();
         document.querySelectorAll('[groupName]').forEach((el) => {
             if (el.getAttribute('groupName').toLowerCase().includes(value) || value == '') {
-                el.style.display = 'block';
+                el.style.display = 'flex';
             }
             else {
-                el.style.display = 'flex';
+                el.style.display = 'none';
             }
         });
     });
