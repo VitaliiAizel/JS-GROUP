@@ -42,7 +42,7 @@
 .class{
     display: flex;
     flex-direction: row;
-    background-color: var(--gray);
+    background-color: var(--darken-gray);
 }
 
 .class-img{
