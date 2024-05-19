@@ -1,2 +1,35 @@
-<h2>selected id: {{id}}</h2>
-<h2>selected guideId: {{guideId}}</h2>
+<div class="wrapper">
+    <div class="header">
+        <h2 class="header-title">Гайди > {{title}}</h2>
+    </div>
+
+    <div class="content">
+        <div class="content-info">
+            <div class="content-preview">
+                <img src="{{img}}" loading="lazy" class="content-img" alt="img">
+            </div>
+            <div class="content-data">
+                <h3 class="content-title">Class Overview</h3>
+                <p class="content-description">{{description}}</p>
+            </div>
+        </div>
+
+        <div class="content-list">
+            <h3 class="content-title">{{title}} Strengths and Weaknesses</h3>
+            <div class="content-table">
+                <div class="table-group">
+                    <h4 class="table-title strengths">Strengths</h4>
+                    <ul class="table-list strengths">
+                        <li class="table-li" ngFor="strengths">{{strengths}}</li>
+                    </ul>
+                </div>
+                <div class="table-group">
+                    <h4 class="table-title weaknesses">Weaknesses</h4>
+                    <ul class="table-list weaknesses">
+                        <li class="table-li" ngFor="weaknesses">{{weaknesses}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

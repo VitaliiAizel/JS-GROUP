@@ -1,5 +1,15 @@
-<h3>Hello World!</h3>
-<h2 class="foo">Hello World!</h2>
-<h1 id="test">Hello World!</h1>
+<div class="wrapper">
+    <div class="header">
+        <h2 class="header-title">Новини</h2>
+    </div>
 
-<img src="./img/FAQ.png" alt="test">
+    <div class="content">
+        <div class="news breaking-{{isBreaking}}" ngFor="news">
+            <img src="{{img}}" loading="lazy" class="news-img">
+            <div class="news-info">
+                <div class="news-title">{{title}}</div>
+                <div class="news-description">{{description}}</div>
+            </div>
+        </div>
+    </div>
+</div>
