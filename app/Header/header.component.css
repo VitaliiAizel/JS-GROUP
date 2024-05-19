@@ -152,7 +152,7 @@
     }
 
     #hamburger-btn.active {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 32px;
         z-index: 9999;
