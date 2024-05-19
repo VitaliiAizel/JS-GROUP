@@ -12,7 +12,7 @@ if (search) {
     search.addEventListener('keyup', (e) => {
         const value = e.target.value.toLowerCase();
         document.querySelectorAll('[groupName]').forEach((el) => {
-            if (el.getAttribute('groupName').toLowerCase() == value) {
+            if (el.getAttribute('groupName').toLowerCase().includes(value) || value == '') {
                 el.style.display = 'block';
             }
             else {
