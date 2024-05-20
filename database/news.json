@@ -13,8 +13,32 @@
     },
     {
         "id": 3,
-        "img": "https://skycoach.gg/storage/uploads/blog-posts/213/images/213_1693508306_900x700.png",
+        "img": "https://wow.zamimg.com/uploads/blog/images/41203-may-10th-hotfixes-warlock-inferno-scaling-taivan-awoos-double-blue-silken-lining.jpg",
         "title": "May 10th Hotfixes - Warlock Inferno Scaling, Taivan Awoos, Double Blue Silken Lining",
-        "description": "Blizzard has published their hotfixes for May 10th, which include the removal from Inferno scaling beyond 5 targets, Taivan will once again awoos when summoned, and double Blue Silken Lining will once again work. Blizzard\nView Original\nMay 10, 2024\nClasses\nWarlock\nFixed an issue where the scaling of Inferno would become reduced when Rain of Fire affected more than 5 targets.\nDungeons\nDawn of the Infinite end bosses should now drop Awakened Crests.\nMounts\nTaivan awoos when summoned, like a good boy.\nNon-player Characters\nKessa, the Personal Tabard Vendor located in Valdrakken should now be available to all alts after completing the questline to unlock the personal tabard.\nProfessions\nTailoring\nFixed a bug where Blue Silken Lining was not granting more mastery for equipping a second item embellished with Blue Silken Lining while the buff was already active.\nQuests\nFixed a bug preventing the completion of “Lotus Tea” after completing “The Pools of Youth”.\nFixed an issue preventing progress on the quest “Get My Results!”.\nPlayers can now call for aid while mounted on the quest “At the Source”."
+        "description": "Blizzard has published their hotfixes for May 10th, which include the removal from Inferno scaling beyond 5 targets, Taivan will once again awoos when summoned, and double Blue Silken Lining will once again work. Blizzard\nClasses\nWarlock\nFixed an issue where the scaling of Inferno would become reduced when Rain of Fire affected more than 5 targets.\nDungeons\nDawn of the Infinite end bosses should now drop Awakened Crests.\nMounts\nTaivan awoos when summoned, like a good boy.\nNon-player Characters\nKessa, the Personal Tabard Vendor located in Valdrakken should now be available to all alts after completing the questline to unlock the personal tabard.\nProfessions\nTailoring\nFixed a bug where Blue Silken Lining was not granting more mastery for equipping a second item embellished with Blue Silken Lining while the buff was already active.\nQuests\nFixed a bug preventing the completion of “Lotus Tea” after completing “The Pools of Youth”.\nFixed an issue preventing progress on the quest “Get My Results!”.\nPlayers can now call for aid while mounted on the quest “At the Source”."
+    },
+    {
+        "id": 4,
+        "img": "https://wow.zamimg.com/uploads/blog/images/41416-mini-mana-bomb-toy-not-obtainable-in-mop-remix.jpg",
+        "title": "Mini Mana Bomb Toy Not Obtainable in MoP Remix?",
+        "description": "The Mini Mana Bomb, a rare toy available during MoP Remix PTR testing, does not seem to be purchasable for Bronze on live servers.\n\nMini Mana Bomb\nItem Level 1\nBinds when picked up\nUnique\nToy\nUse: Toss your Mini Mana Bomb. (3 Min Cooldown)\n\n\nThe Mini Mana Bomb Mini Mana Bomb toy is very rare since it could only be acquired from the Fall of Theramore event in the Mists of Pandaria pre-patch. During PTR testing, it was sold to Horde characters for 50000 Bronze by Horos, allowing newer players a chance to obtain this toy.\n\nHowever, many players have been reporting in the comments that this item does not appear for sale on live servers. We're not sure if this is a bug, deliberate omission, or requires additional prerequisites to unlock, but we'll keep you posted if anything changes."
+    },
+    {
+        "id": 5,
+        "img": "https://media.mmo-champion.com/images/news/2024/may/thumb/loadscreen_cityofthreadsdungeon.jpg",
+        "title": "New City of Threads Dungeon Loading Screen in The War Within",
+        "description": "We've datamined a new zone loading screen for the City of Threads dungeon located in Azj-Kahet in the War Within.This loading screen is displayed every time you enter the dungeon instance in The War Within. See more loading screens from our initial alpha datamining or from the previous alpha build."
+    },
+    {
+        "id": 6,
+        "img": "https://wow.zamimg.com/uploads/blog/images/41128-locus-walker-stay-awhile-in-telogrus-rift-a-lesson-in-maintaining-sanity.jpg",
+        "title": "Locus-Walker Stay Awhile in Telogrus Rift- A Lesson In Maintaining Sanity",
+        "description": "Locus-Walker is the Ethereal who first taught Alleria how to use the Void without falling victim to its corruption. Now, he teaches the other Void Elves in Telogrus Rift, and players can listen in on one of his lessons!\nLocus-Walker\nPlayers who approach Locus-Walker during Alleria Windrunner's Hunt for the Harbinger questline can ask him about his decision to teach the ren-dorei about the Void, and even hang around to overhear a lesson about maintaining sanity even in the face of the Void's whispers.\nDo you wish to learn more of the Void? It has many lessons to teach us amongst its maddening whispers.\nOne must simply learn to properly listen.\n Why have you chosen to teach the ren'dorei about the Void?\nYour question is not without merit. Long ago, I chose to teach Alleria about the ways of the Void. But she had proven herself worthy of such lessons with my rescue from the Legion.\nPerhaps I merely wish to sate my own curiosity. And Telogrus Rift and the ren'dorei are both quite the curiosities, aren't they?\n"
+    },
+    {
+        "id": 7,
+        "img": "https://wow.zamimg.com/uploads/blog/images/41056-new-warcraft-short-story-a-whisper-of-warning.jpg",
+        "title": "New Warcraft Short Story: `A Whisper of Warning`",
+        "description": "Blizzard has released a new Warcraft Short Story called `A Whisper of Warning`!\nBlizzard\nKhadgar has dispatched Alleria Windrunner on a dark mission, one that portends an uncertain future for Azeroth. Before she departs, she visits her lost home of Silvermoon on a mission of peace and connection. Much remains unsaid between Alleria and her son, Arator—hindered by fear and misunderstanding—but Alleria would have her son know his mother and her intentions before a new evil threatens Azeroth again.\nThe afternoon sun filtered through the crimson leaves overhead as Alleria Windrunner walked the path toward Silvermoon City. In times past, happier times, she might have flown or used a portal to appear inside the city walls, but as it was, she approached warily, as if nearing a sleeping beast that did not wake gently. Once, she had defended these walls, these people. But now?\nNow, to many, she was the source of danger.\nRead and download this short story by Delilah S. Dawson."
     }
 ]
