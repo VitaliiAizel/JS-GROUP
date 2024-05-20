@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Standing-or-fishing",
+        "img": "https://place-hold.it/100x100/b53a3a/b53a3a"
+    },
+    {
+        "id": 2,
+        "name": "Throw-img-1",
+        "img": "https://place-hold.it/100x100/a52a2a/a52a2a"
+    },
+    {
+        "id": 3,
+        "name": "Throw-img-2",
+        "img": "https://place-hold.it/100x100/951a1a/951a1a"
+    },
+    {
+        "id": 4,
+        "name": "Throw-img-3",
+        "img": "https://place-hold.it/100x100/850a0a/850a0a"
+    }
+]

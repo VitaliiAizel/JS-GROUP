@@ -1,0 +1,568 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* backround */
+
+#backround {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#lake {
+  background-color: #d5eeff;
+  height: 90%;
+  width: 100%;
+}
+
+.hole {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #3498db; /* Колір отвору */
+  border-radius: 10%; /* ТАК, вони в мене спеціально квадратні і тільки заокруглені */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hole .fish {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color:rgb(46, 204, 113); /* Зелений колір для рибки */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 2;
+}
+
+#land {
+  background-color: rgb(250, 218, 177);
+  height: 10%;
+  min-height: 150px;
+  width: 100%;
+}
+
+/* player */
+
+#player {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* float */
+
+#float {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 100px;
+  top: 40px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+  z-index: 2;
+}
+
+#float img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* throw-scale */
+
+#throw-scale {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  width: 50px;
+  height: 250px;
+  background-color: rgb(130, 60, 40);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;  
+}
+
+#progress-bar {
+  width: 16px;  
+  height: 80%;
+  bottom: 10%;
+  transform: translateX(100%);
+  position: absolute;
+  overflow: hidden;
+}
+
+#progress-gradient-wrapper {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-top-right-radius: 4px;
+  will-change: height;
+}
+
+#progress-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 332px;
+  display: block;
+}
+
+/* record-table */
+
+#record-table {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  min-width: 300px;
+  max-width: 600px;
+  width: 30%;
+  max-height: 285px;
+  background-color: rgb(130, 60, 40); /* колір деревини */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#record-title {
+  font-size: 1.9em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#record-container {
+  max-height: 170px; /* висота контейнера з результатами */
+  overflow-y: auto; /* вертикальна прокрутка */
+  background-color: rgb(210, 140, 90); /* світліший колір деревини */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.record {
+  background-color: rgba(255, 255, 255, 0.2); /* трохи прозорий білий фон для кожного запису */
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* reload-game */
+
+#reload-game {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  min-width: 300px;
+  max-width: 600px;
+  width: 20%;
+  height: 65px;
+  background-color: rgb(130, 60, 40); /* колір деревини */
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  color: #fff;
+}
+
+#reload-button {
+  background-color: rgb(130, 60, 40); /* колір деревини */
+  color: #fff;
+  border: none;
+  margin-inline: 10px;
+  border-radius: 5px;
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reload-game:hover, #reload-game:hover #reload-button {
+  background-color: rgb(150, 70, 60); /* світліший колір деревини при наведенні */
+}
+
+/* bait-table */
+
+#bait-table {
+  position: absolute;
+  top: 11%;
+  right: 1%;
+  min-width: 300px;
+  max-width: 600px;
+  width: 20%;
+  height: 65px;
+  background-color: rgb(130, 60, 40); /* колір деревини */
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.bait-inner-container {
+  width: 100%;
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#bait-title {
+  font-size: 1.8em;
+  text-align: center;
+  flex-grow: 1; /* Дозволяє заголовку займати всю доступну ширину */
+}
+
+.bait-value {
+  background-color: rgb(210, 140, 90); /* світліший колір деревини */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  min-width: 50px;
+  text-align: center;
+  margin-left: 10px; /* Відступ від заголовка */
+}
+
+/* score-indicator */
+
+#score-indicator {
+  position: absolute;
+  top: 20%;
+  right: 1%;
+  min-width: 300px;
+  max-width: 600px;
+  width: 20%;
+  height: 65px;
+  background-color: rgb(130, 60, 40); /* колір деревини */
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.score-container {
+  width: 100%;
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#score-title {
+  font-size: 1.8em;
+  text-align: center;
+  flex-grow: 1; /* Дозволяє заголовку займати всю доступну ширину */
+}
+
+.score-value {
+  background-color: rgb(210, 140, 90); /* світліший колір деревини */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  min-width: 50px;
+  text-align: center;
+  margin-left: 10px; /* Відступ від заголовка */
+}
+
+/* end-game-container */
+.end-game-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.end-game-content {
+  background-color: rgb(130, 60, 40); /* колір деревини */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.end-game-title {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+#player-name {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+}
+
+#submit-score {
+  background-color: rgb(210, 140, 90); /* світліший колір деревини */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#submit-score:hover {
+  background-color: rgb(230, 160, 110);
+}
+
+
+
+
+
+
+
+
+/* fishing-scale */
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.game {
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+}
+  
+.fill-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+/* ----------- */
+/* Fishing rod */
+/* ----------- */
+
+.fishing-rod {
+  width: 46px;
+  height: 352px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.reel-handle {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 81.2%;
+  left: 1.8%;
+  z-index: 10;
+}
+
+.reel-handle img {
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 0.35s;
+  animation-timing-function: linear;
+  transform-origin: 12px 2.5px;
+  animation-play-state: paused;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}
+
+.indicator-active .reel-handle img {
+  animation-play-state: running;
+}
+
+.reel-line {
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  top: 265px;
+  left: 4px;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/game-reel-loop.png') top left repeat-x;
+  background-size: auto 100%;
+  z-index: 5;
+  animation-name: reel;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  opacity: 0.3;
+}
+
+.indicator-active .reel-line {
+  animation-play-state: running;
+}
+
+@keyframes reel {
+  0% {background-position: 0;}
+  100% {background-position: 139px}
+}
+
+.reel-line-tension {
+  width: 42%;
+  height: 13.5%;
+  position: absolute;
+  bottom: 26.8%;
+  left: 29%;
+  /* background: red;
+  opacity: 0.5; */
+}
+
+/* --------- */
+/* Game body */
+/* --------- */
+
+.game-body {
+  width: 36px;
+  height: 350px;
+  position: relative;
+}
+
+.seafloor {
+  position: relative;
+  z-index: 5;
+}
+
+.seaweed {
+  width: 94.5%;
+  height: 19%;
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+  z-index: 10;
+}
+
+.bubbles {
+  width: 94.5%;
+  height: 95.2%;
+  position: absolute;
+  bottom: 4%;
+  left: 2.7%;
+  /* background: red;
+  opacity: 0.5; */
+}
+
+.fish {
+  width: 25px;
+  height: 17px;
+  position: absolute;
+  top: calc(100% - 17px);
+  left: 18%;
+  opacity: 0.8;
+  will-change: top;
+}
+
+.indicator {
+  width: 34px;
+  height: 70px;
+  position: absolute;
+  top: calc(100% - 70px);
+  left: 3%;
+  opacity: 0.8;
+  z-index: 30;
+}
+
+.glass {
+  z-index: 20;
+}
+
+/* ------------ */
+/* Progress bar */
+/* ------------ */
+
+.progress-bar {
+  width: 16px;
+  height: 334px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-gradient-wrapper {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  overflow: hidden;
+  border-top-right-radius: 4px;
+  will-change: height;
+}
+
+.progress-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 332px;
+  display: block;
+}
+
+/* ------- */
+/* Success */
+/* ------- */
+
+.success {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+  opacity: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.nice-catch {
+  width: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+.perfect {
+  width: 46.743295%;
+  margin-top: -4px;
+  transform-origin: top;
+  position: relative;
+  z-index: 10;
+}
