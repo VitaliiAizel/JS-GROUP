@@ -1,36 +1,76 @@
-.wrapper{
 
-}
 .info{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
+
 .info-title{
-
+    font-weight: 600;
+    font-size: 1.25rem; 
 }
-.info-content{
 
-}
 .devs{
-
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .devs-title{
-
+    font-size: 1.25rem;
+    font-weight: 600;
 }
-.devs-wrapper{
 
+.devs-wrapper{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 .devs-person{
-
+    display: flex;
+    flex-direction: row;
+    background-color: var(--darken-gray);
 }
 .devs-person-img{
-
+    object-fit: cover;
+    width: 25vw;
 }
+
 .devs-person-info{
-
+    padding: 16px;
 }
-.devs-person-name{
 
+.devs-person-name{
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 .devs-person-description{
+    margin-top: 16px;
+    opacity: 0.75;
+    line-height: 125%;
+}
 
+@media (max-width: 768px) {
+    .devs-person {
+        flex-direction: column;
+    }
+
+    .devs-person-info{
+        min-height: 200px;
+        max-height: 100vh;
+    }
+    
+    .devs-person-img {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .devs-person-info{
+        font-size: 0.9rem;
+    }
 }
