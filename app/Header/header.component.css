@@ -26,6 +26,8 @@
 
 .header-nav {
     display: flex;
+    position: relative;
+    z-index: 999;
 }
 
 #header-ul {
