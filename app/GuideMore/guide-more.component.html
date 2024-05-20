@@ -1,13 +1,9 @@
 <div class="wrapper">
-    <div class="header">
-        <h2 class="header-title">Гайди > {{title}}</h2>
-    </div>
+    <h2 class="title"><span class="title-underline" routerLink="guide">Гайди</span> > {{title}}</h2>
 
     <div class="content">
         <div class="content-info">
-            <div class="content-preview">
-                <img src="{{img}}" loading="lazy" class="content-img" alt="img">
-            </div>
+            <img src="{{img}}" loading="lazy" class="content-img" alt="img">
             <div class="content-data">
                 <h3 class="content-title">Class Overview</h3>
                 <p class="content-description">{{description}}</p>
@@ -15,7 +11,7 @@
         </div>
 
         <div class="content-list">
-            <h3 class="content-title">{{title}} Strengths and Weaknesses</h3>
+            <h3 class="title">{{title}} Strengths and Weaknesses</h3>
             <div class="content-table">
                 <div class="table-group">
                     <h4 class="table-title strengths">Strengths</h4>
