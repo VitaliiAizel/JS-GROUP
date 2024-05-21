@@ -1,5 +1,5 @@
 #game-wrapper {
-    height: 100vh;
+    height: 85vh;
 
     position: relative;
 
@@ -104,7 +104,7 @@
     border: none;
     margin-inline: 10px;
     border-radius: 5px;
-    font-size: 1.8em;
+    font-size: 1.7em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -141,7 +141,7 @@
 }
 
 #bait-title {
-    font-size: 1.8em;
+    font-size: 1.7em;
     text-align: center;
     flex-grow: 1;
     /* Дозволяє заголовку займати всю доступну ширину */
@@ -185,7 +185,7 @@
 }
 
 #score-title {
-    font-size: 1.8em;
+    font-size: 1.7em;
     text-align: center;
     flex-grow: 1;
     /* Дозволяє заголовку займати всю доступну ширину */
@@ -213,7 +213,7 @@
 }
 
 #lake {
-    background-color: #d5eeff;
+    background-color: #ffffff;
     height: 90%;
     width: 100%;
 }
@@ -222,10 +222,7 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    background-color: #3498db;
-    /* Колір отвору */
     border-radius: 10%;
-    /* ТАК, вони в мене спеціально квадратні і тільки заокруглені */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -235,18 +232,16 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: rgb(46, 204, 113);
-    /* Зелений колір для рибки */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    opacity: 1;
 }
 
 #land {
     background-color: rgb(250, 218, 177);
-    height: 10%;
-    min-height: 150px;
+    height: 18%;
     width: 100%;
 }
 
@@ -259,20 +254,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* float */
 
 #float {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    left: 100px;
-    top: 40px;
     border-radius: 50%;
-    background-color: #ff0000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    z-index: 2;
+    z-index: 2; 
+    opacity: 0;
 }
 
 #float img {
@@ -351,7 +346,7 @@
 }
 
 .end-game-title {
-    font-size: 1.8em;
+    font-size: 1.7em;
     margin-bottom: 20px;
 }
 
@@ -617,7 +612,55 @@
         max-height: 100vw;
     }
 
-    #record-title, #score-title, #bait-title, #reload-button {
+    #record-title,
+    #score-title,
+    #bait-title,
+    #reload-button {
         font-size: 1rem;
     }
+
+    .hole {
+        width: 75px;
+        height: 75px;
+    }
+
+    .hole .fish {
+        position: absolute;
+        width: 37px;
+        height: 37px;
+    }
+
+    #player {
+        width: 75px;
+        height: 75px;
+    }
+
+    #float {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hole {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hole .fish {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+    }
+
+    #player {
+        width: 50px;
+        height: 50px;
+    }
+
+    #float {
+        width: 10px;
+        height: 10px;
+    }
+
 }
