@@ -6,7 +6,7 @@ class Hole {
     }
 
     checkCollision(index, floatX, floatY) {
-        const hole = document.getElementById("hole " + index);
+        const hole = document.getElementById('hole ' + index);
         const holeRect = hole.getBoundingClientRect();
         const holeLeft = holeRect.left;
         const holeRight = holeRect.right;
@@ -20,11 +20,8 @@ class Hole {
     }
 
     isInHole(index) {
-        document.getElementById('game-wrapper').removeEventListener('mousedown', throwAnimation);
-        document.getElementById('game-wrapper').removeEventListener('mousedown', startProgress);
-        document.getElementById('game-wrapper').removeEventListener('mousedown', baitdecriment);
-        document.getElementById('game-wrapper').removeEventListener('mouseup', resetProgress);
-        const hole = document.getElementById("hole " + index);
+        removeControl();
+        const hole = document.getElementById('hole ' + index);
         if (this.fishCount != 0)
             startFishing(this, hole);
     }
@@ -36,20 +33,26 @@ const recordTable = document.getElementById('record-table');
 const throwScale = document.getElementById('throw-scale');
 const addName = document.getElementById('submit-score');
 const float = document.getElementById('float');
-const obj = document.getElementById('player');
+const player = document.getElementById('player');
 const land = document.getElementById('land');
 let score = document.getElementById('score-count');
 let bait = document.getElementById('bait-count');
 let scoreValue = parseInt(score.innerText);
 let baitValue = parseInt(bait.innerText);
-let _top = window.innerHeight - land.clientHeight / 2;
-let left = land.clientWidth / 2 - 50;
+let backroundHeight = document.getElementById('backround').clientHeight;
+let backroundWidth = document.getElementById('backround').clientWidth;
+let _top = backroundHeight - land.clientHeight / 2;
+let left = backroundWidth / 2 - land.clientHeight / 2;
 let currSpriteIndex = 0;
-let holesAmount = 2;
+let holdDelay = 200;
+let holesAmount = 3;
 let progress = 0;
 let intervalSprite;
 let intervalThrow;
 let leftPercent;
+let _topPercent;
+let holdTimeout;
+
 
 const holes = [];
 let sprite = [];
@@ -62,28 +65,36 @@ document.getElementById('game-wrapper').addEventListener('mouseup', () => {
 });
 
 document.getElementById('reload-button').addEventListener('click', () => {
-    // Скинути всі необхідні змінні та стани
     resetGameState();
 });
 
-document.getElementById('game-wrapper').addEventListener('mousedown', throwAnimation);
-document.getElementById('game-wrapper').addEventListener('mousedown', startProgress);
-document.getElementById('game-wrapper').addEventListener('mousedown', baitdecriment);
-window.document.addEventListener('keydown', keydownHandler);
-document.getElementById('game-wrapper').addEventListener('mouseup', resetProgress);
+addName.addEventListener('click', function () {
+    const playerName = document.getElementById('player-name').value;
+    if (playerName) {
+        saveRecords(playerName, scoreValue);
+
+        const endGameContainer = document.getElementById('endGameBackground');
+        endGameContainer.style.display = 'none';
+    } else {
+        alert('Будь ласка, введіть ваше ім\'я');
+    }
+    resetGameState();
+});
+
 window.addEventListener('resize', adaptPosition);
 
 /* Ajax */
-await HttpClient.getJson("database/player.json").then((response) => {
+await HttpClient.getJson('database/player.json').then((response) => {
     for (let i in response)
         sprite[i] = response[i].img;
     changeSprite(currSpriteIndex, sprite);
 });
 
 /* Function calls */
+addControl();
 loadRecords();
-updatePosition();
 holegeneration();
+updatePosition();
 adaptPosition();
 
 /* Functions */
@@ -97,7 +108,8 @@ async function resetGameState() {
     document.getElementById('record-container').innerHTML = '';
     document.getElementById('game').style.display = 'none';
     endGameContainer.style.display = 'none';
-    float.style.top = "";
+    float.style.opacity = 0;
+    float.style.top = '';
     loadRecords();
     clearInterval(intervalSprite);
     clearInterval(intervalThrow);
@@ -107,35 +119,36 @@ async function resetGameState() {
     currSpriteIndex = 0;
     progress = 0;
 
-    await HttpClient.getJson("database/player.json").then((response) => {
+    await HttpClient.getJson('database/player.json').then((response) => {
         for (let i in response)
             sprite[i] = response[i].img;
         changeSprite(currSpriteIndex, sprite);
     });
 
-    _top = window.innerHeight - land.clientHeight / 2;
+    _top = backroundHeight - land.clientHeight / 2;
     left = land.clientWidth / 2 - 50;
     updatePosition();
     holegeneration();
-
-    document.getElementById('game-wrapper').addEventListener('mousedown', throwAnimation);
-    document.getElementById('game-wrapper').addEventListener('mousedown', startProgress);
-    document.getElementById('game-wrapper').addEventListener('mousedown', baitdecriment);
-    window.document.addEventListener('keydown', keydownHandler);
-    document.getElementById('game-wrapper').addEventListener('mouseup', resetProgress);
+    addControl();
     window.addEventListener('resize', adaptPosition);
 }
 
 function updatePosition() {
-    obj.style.left = `${left}px`;
-    obj.style.top = `${_top}px`;
+    player.style.left = `${left}px`;
+    player.style.top = `${_top}px`;
     adaptPosition();
 }
 
 function adaptPosition() {
-    if (obj.style.left.includes('px'))
-        leftPercent = (left / window.innerWidth) * 100;
-    obj.style.left = `${leftPercent}%`;
+    //document.getElementById('wrapper').style.height = window.innerWidth * 16 / 9;
+    backroundWidth = document.getElementById('backround').clientWidth;
+    if (player.style.left.includes('px'))
+        leftPercent = (left / backroundWidth) * 100;
+    player.style.left = `${leftPercent}%`;
+
+    if (player.style.top.includes('px'))
+        _topPercent = (_top / backroundHeight) * 100;
+    player.style.top = `${_topPercent}%`;
 }
 
 function throwAnimation(event) {
@@ -146,8 +159,10 @@ function throwAnimation(event) {
 }
 
 function keydownHandler(event) {
-    if (obj.style.left.includes('%'))
-        left = window.innerWidth * (parseFloat(obj.style.left) / 100);
+    if (player.style.left.includes('%'))
+        left = backroundWidth * (parseFloat(player.style.left) / 100);
+    if (player.style.top.includes('%'))
+        _top = backroundHeight * (parseFloat(player.style.top) / 100);
     const step = 10;
     switch (event.key) {
         case 'ArrowLeft':
@@ -157,8 +172,8 @@ function keydownHandler(event) {
             left += step;
             break;
     }
-    _top = Math.max(window.innerHeight - land.clientHeight + obj.clientWidth / 2, Math.min(_top, window.innerHeight - obj.clientHeight / 2));
-    left = Math.max(obj.clientWidth / 2, Math.min(left, land.clientWidth - obj.clientWidth / 2));
+    _top = Math.max(backroundHeight - land.clientHeight + player.clientWidth / 2, Math.min(_top, window.innerHeight - player.clientHeight / 2));
+    left = Math.max(player.clientWidth / 2, Math.min(left, land.clientWidth - player.clientWidth / 2));
     updatePosition();
 }
 
@@ -167,7 +182,7 @@ function changeSprite(SpriteIndex, sprite) {
         clearInterval(intervalSprite);
         return;
     }
-    obj.style.backgroundImage = `url(${sprite[SpriteIndex]})`;
+    player.style.backgroundImage = `url(${sprite[SpriteIndex]})`;
     currSpriteIndex++;
 }
 
@@ -190,24 +205,25 @@ function updateRecordsDisplay(recordName, recordScore) {
 function saveRecords(name, score) {
     const recordsString = localStorage.getItem('records');
 
-    const recordsObj = JSON.parse(recordsString) || [];
-    const existedObj = recordsObj.findIndex((el) => el.name == name);
+    const recordsPlayer = JSON.parse(recordsString) || [];
+    const existedPlayer = recordsPlayer.findIndex((el) => el.name == name);
 
-    if (existedObj != -1 && score > recordsObj[existedObj].score) {
-        recordsObj[existedObj].score = score;
-        localStorage.setItem('records', JSON.stringify(recordsObj));
+    if (existedPlayer != -1 && score > recordsPlayer[existedPlayer].score) {
+        recordsPlayer[existedPlayer].score = score;
+        localStorage.setItem('records', JSON.stringify(recordsPlayer));
         return;
     }
 
-    recordsObj.push({ name, score });
-    localStorage.setItem('records', JSON.stringify(recordsObj));
+    recordsPlayer.push({ name, score });
+    localStorage.setItem('records', JSON.stringify(recordsPlayer));
 }
 
 function loadRecords() {
     const recordsString = localStorage.getItem('records');
-    const recordsObj = JSON.parse(recordsString) || [];
+    const recordsPlayer = JSON.parse(recordsString) || [];
+    recordsPlayer.sort((a, b) => b.score - a.score);
 
-    for (let item of recordsObj) {
+    for (let item of recordsPlayer) {
         updateRecordsDisplay(item.name, item.score);
     }
 }
@@ -237,12 +253,8 @@ function updateProgress() {
 }
 
 function startProgress(event) {
-    if (event.button === 0) {
+    if (event.button === 0 && (float.style.top == '' || float.style.top == '0px'))
         showThrowScale();
-    } else if (event.button === 1) {
-        window.document.addEventListener('keydown', keydownHandler);
-        float.style.top = "";
-    }
 }
 
 function resetProgress(event) {
@@ -252,42 +264,66 @@ function resetProgress(event) {
 }
 
 function throwFloat(progress) {
-    float.style.top = `${-((window.innerHeight - land.clientHeight / 2) - (recordTable.clientHeight + obj.clientHeight)) * progress / 100}px`;
-    window.document.removeEventListener('keydown', keydownHandler);
+    float.style.top = `${-(backroundHeight - land.clientHeight / 2) * progress / 100}px`;
+    if (progress > 0) {
+        window.document.removeEventListener('keydown', keydownHandler);
+        float.style.opacity = 1;
+    }
+    else {
+        window.document.addEventListener('keydown', keydownHandler);
+        float.style.opacity = 0;
+    }
 
-    // Get the absolute position of the float
     const floatRect = float.getBoundingClientRect();
     const floatX = floatRect.left + (float.clientWidth / 2);
     const floatY = floatRect.top + (float.clientHeight / 2);
-
-    // Check collision with holes
     checkHoleCollision(floatX, floatY);
 
     isFishing = true;
 }
 
-// Generate holes
 function holegeneration() {
     const lake = document.getElementById('lake');
     lake.innerHTML = '';
+
     for (let i = 0; i < holesAmount; i++) {
-        const left = Math.random() * 80;
-        const _top = Math.random() * ((window.innerHeight - (land.clientHeight + 500)) / window.innerHeight * 100) + 29;
-        const fishCount = Math.floor(Math.random() * 3) + 2; // Random fish count between 1 to 10
+        let left = Math.random() * 80;
+        let _top = Math.random() * 70;
+
+        const fishCount = Math.floor(Math.random() * 3) + 2;
         const hole = new Hole(left, _top, fishCount);
         holes.push(hole);
 
         const lakearea = window.document.createElement('div');
         lakearea.className = 'hole';
         lakearea.id = 'hole ' + i;
+
+        for (let j = 0; j < i; j++) {
+            let holeSize = document.querySelector('.hole').clientWidth;
+            let holeWidth = holeSize / backroundWidth * 100;
+            let holeHeight = holeSize / backroundHeight * 100;
+
+            while (
+                Math.abs(parseFloat(document.getElementById(`hole ${j}`).style.left) - left) < holeWidth &&
+                Math.abs(parseFloat(document.getElementById(`hole ${j}`).style.top) - _top) < holeHeight
+            ) {
+                left = Math.random() * 80;
+                _top = Math.random() * 70;
+            }
+        }
+
         lakearea.style.left = `${left}%`;
         lakearea.style.top = `${_top}%`;
+
+        const holeImage = window.document.createElement('img');
+        holeImage.src = './img/gameSprites/hole.png';
+
+        lakearea.appendChild(holeImage);
         lake.appendChild(lakearea);
     }
     return holes;
 }
 
-// Check collision and start fishing
 function checkHoleCollision(floatX, floatY) {
     for (let i = 0; i < holes.length; i++) {
         if (holes[i].checkCollision(i, floatX, floatY)) {
@@ -299,30 +335,31 @@ function checkHoleCollision(floatX, floatY) {
     }
 }
 
-// Function to move the fish towards the float
-function moveFishTowardsFloat(hole, float) {
+function moveFish(hole) {
     const fish = window.document.createElement('div');
     fish.className = 'fish';
+
+    const fishImage = window.document.createElement('img');
+    fishImage.src = './img/gameSprites/fish.png';
+
+    fish.appendChild(fishImage);
     hole.appendChild(fish);
+
     const duration = 50;
 
     setTimeout(() => {
         const holeRect = hole.getBoundingClientRect();
-        const objRect = obj.getBoundingClientRect();
+        const playerRect = player.getBoundingClientRect();
 
         const holeCenterX = holeRect.left + (holeRect.width / 2);
         const holeCenterY = holeRect.top + (holeRect.height / 2);
 
-        const objCenterX = objRect.left + (objRect.width / 2);
-        const objCenterY = objRect.top + (objRect.height / 2);
-
-        const deltaX = objCenterX - holeCenterX;
-        const deltaY = objCenterY - holeCenterY;
+        const deltaX = 0;
+        const deltaY = -50;
 
         fish.style.left = `${fish.offsetLeft}px`;
-        fish.style.top = `${fish._offsetTop}px`;
-
-        const steps = 100;
+        fish.style.top = `${fish.offsetTop}px`;
+        const steps = 20;
 
         let step = 0;
         moveStep();
@@ -338,7 +375,7 @@ function moveFishTowardsFloat(hole, float) {
                 step++;
                 requestAnimationFrame(moveStep);
             } else {
-                fish.remove(); // Remove the fish when it reaches the float
+                fish.remove();
             }
         }
     }, duration);
@@ -346,32 +383,47 @@ function moveFishTowardsFloat(hole, float) {
 
 function endGame() {
     endGameContainer.style.display = 'flex';
-    document.getElementById('game-wrapper').removeEventListener('mousedown', throwAnimation);
-    document.getElementById('game-wrapper').removeEventListener('mousedown', startProgress);
-    document.getElementById('game-wrapper').removeEventListener('mousedown', baitdecriment);
-    document.getElementById('game-wrapper').removeEventListener('mouseup', resetProgress);
-    //hideThrowScale();
+    removeControl();
+    float.style.opacity = 0;
     float.style.top = '';
+}
 
-    addName.addEventListener('click', function () {
-        const playerName = document.getElementById('player-name').value;
-        if (playerName) {
-            saveRecords(playerName, scoreValue); // Поправлено тут
+function handleMouseDown(event) {
+    if (event.button !== 0 || !(float.style.top == '' || float.style.top == '0px')) return;
 
-            // Закриття екрану після додавання рекорду
-            const endGameContainer = document.getElementById('endGameBackground');
-            endGameContainer.style.display = 'none';
-        } else {
-            alert('Будь ласка, введіть ваше ім\'я');
-        }
-        resetGameState();
-    });
+    holdTimeout = setTimeout(() => {
+        throwAnimation(event);
+        startProgress(event);
+        baitdecriment(event);
+    }, holdDelay);
+}
+
+function handleMouseUp(event) {
+    if (event.button !== 0) return;
+
+    clearTimeout(holdTimeout);
+    resetProgress(event);
+}
+
+function addControl() {
+    const gameWrapper = document.getElementById('game-wrapper');
+    gameWrapper.addEventListener('mousedown', handleMouseDown);
+    gameWrapper.addEventListener('mouseup', handleMouseUp);
+    window.document.addEventListener('keydown', keydownHandler);
+}
+
+function removeControl() {
+    const gameWrapper = document.getElementById('game-wrapper');
+    gameWrapper.removeEventListener('mousedown', handleMouseDown);
+    gameWrapper.removeEventListener('mouseup', handleMouseUp);
+    window.document.removeEventListener('keydown', keydownHandler);
 }
 
 function startFishing(fishAmount, hole) {
     const game = document.getElementById('game');
     game.style.display = 'flex';
     isFishing = true;
+    removeControl();
 
     (function (isFishing) {
         let gameOver = false;
@@ -506,11 +558,11 @@ function startFishing(fishAmount, hole) {
             constructor() {
                 this.wrapper = document.querySelector('.progress-bar');
                 this.progressBar = this.wrapper.querySelector('.progress-gradient-wrapper');
-                this.progress = 75;
+                this.progress = 50;
             }
 
             reset() {
-                this.progress = 75;
+                this.progress = 50;
             }
 
             drain() {
@@ -558,8 +610,8 @@ function startFishing(fishAmount, hole) {
 
         document.getElementById('game-wrapper').addEventListener('mousedown', indicatorActive);
         document.getElementById('game-wrapper').addEventListener('mouseup', indicatorInactive);
-        document.addEventListener('keydown', indicatorActive);
         document.getElementById('game-wrapper').addEventListener('keyup', indicatorInactive);
+        document.addEventListener('keydown', indicatorActive);
 
         function indicatorActive() {
             if (!isFishing) return;
@@ -588,19 +640,18 @@ function startFishing(fishAmount, hole) {
         // ----------------
 
         function endFishing(isWinning) {
-            document.getElementById('game-wrapper').addEventListener('mousedown', throwAnimation);
-            document.getElementById('game-wrapper').addEventListener('mousedown', startProgress);
-            document.getElementById('game-wrapper').addEventListener('mousedown', baitdecriment);
-            window.document.addEventListener('keydown', keydownHandler);
-            document.getElementById('game-wrapper').addEventListener('mouseup', resetProgress);
+            setTimeout(() => {
+                addControl();
+            }, 0);
             game.style.display = 'none';
-            float.style.top = "";
+            float.style.opacity = 0;
+            float.style.top = '';
 
             if (isWinning) {
                 scoreValue += 10;
                 score.innerHTML = scoreValue;
                 fishAmount.fishCount--;
-                moveFishTowardsFloat(hole, float);
+                moveFish(hole, float);
             }
 
             if (fishAmount.fishCount === 0) {
@@ -619,73 +670,7 @@ function startFishing(fishAmount, hole) {
         animationLoop();
 
     })(isFishing);
-
-    // -------
-    // Seaweed
-    // -------
-
-    (function (isFishing) {
-        let seaweed = [];
-        const canvas = document.querySelector('[data-element="seaweed"]');
-        canvas.width = canvas.clientWidth * 2;
-        canvas.height = canvas.clientHeight * 2;
-        const context = canvas.getContext('2d');
-
-        function animationLoop() {
-            if (!isFishing) return;
-
-            clearCanvas();
-            seaweed.forEach(seaweed => seaweed.draw());
-
-            requestAnimationFrame(animationLoop);
-        }
-
-        function clearCanvas() {
-            context.clearRect(0, 0, canvas.width, canvas.height);
-        }
-
-        class Seaweed {
-            constructor(segments, spread, xoff) {
-                this.segments = segments;
-                this.segmentSpread = spread;
-                this.x = 0;
-                this.xoff = xoff;
-                this.y = 0;
-                this.radius = 1;
-                this.sin = Math.random() * 10;
-            }
-
-            draw() {
-                context.beginPath();
-                context.strokeStyle = "#143e5a";
-                context.fillStyle = "#143e5a";
-                context.lineWidth = 2;
-                for (let i = this.segments; i >= 0; i--) {
-                    if (i === this.segments) {
-                        context.moveTo(
-                            Math.sin(this.sin + i) * i / 2.5 + this.xoff,
-                            canvas.height + (-i * this.segmentSpread),
-                        );
-                    } else {
-                        context.lineTo(
-                            Math.sin(this.sin + i) * i / 2.5 + this.xoff,
-                            canvas.height + (-i * this.segmentSpread),
-                        );
-                    }
-                }
-                context.stroke();
-
-                this.sin += 0.05;
-            }
-        }
-
-        seaweed.push(new Seaweed(6, 8, 25));
-        seaweed.push(new Seaweed(8, 10, 35));
-        seaweed.push(new Seaweed(4, 8, 45));
-
-        animationLoop()
-    })(isFishing);
-
+    
     // -----------------
     // Reel line tension
     // -----------------
