@@ -54,5 +54,361 @@
                 "weaknesses": "Multiple different defensives that must be juggled rather than one primary mitigation that is maintained consistently unlike other tank specs.\nDefensives are primarily short duration, requiring a good understanding of when to overlap and when to chain them.\nDebuff based defensives mean no universal Damage Reduction abilities ( Fiery Brand,  Frailty,  Sigil of Flame require targets).\nHealing does not work on environmental damage."
             }
         ]
+    },
+    {
+        "id": 3,
+        "img": "https://overgear.com/guides/wp-content/uploads/2023/09/druid-leveling-in-hardcore-wow-825x510.webp",
+        "title": "Druid",
+        "description": "Druids harness the vast powers of nature to preserve balance and protect life. With experience, druids can unleash nature’s raw energy against their enemies, raining celestial fury on them from a great distance, binding them with enchanted vines, or ensnaring them in unrelenting cyclones.\n\nThere are four specializations available to Druids: Balance (Ranged DPS), Feral (Melee DPS), Guardian (Tank), and Restoration (Healer).",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://overgear.com/guides/wp-content/uploads/2024/02/balance-druid-guide-scaled.jpg",
+                "title": "Balance Druid",
+                "description": "Balance's class fantasy is controlling the sun and the moon to do damage from range with Nature and Arcane spell schools. You are in a higher state and gain bonus damage by being in  Moonkin Form.\n\nBalance Druid is a spec that is good for players that enjoy a builder spender gameplay with strong cooldowns. With it being a Druid, you also has access to a high amount of utility abilities that allow for many opportunities to succeed outside of dealing damage.",
+                "strengths": "Long Term Sustained Multi Target - Balance has a high amount of multi-target damage due to most of our multi-target power being in  Starfall,  Moonfire,  Sunfire, and  Starfire.\n Bear Form +  Barkskin conjunction - While independently these two cooldowns are not very powerful, when used in conjunction they are some of the strongest in the game. Bear Form increasing Armor and Stamina by huge amounts and Barkskin giving a 20% damage reduction on top of it. The downside to this is the significant loss in damage, but the huge amounts of survivability make up for it.\nControl and Utility - Druid, as a class, has a large amount of utility and control in the form of  Innervate,  Entangling Roots, and  Typhoon and the talent row consisting of  Mass Entanglement, and  Mighty Bash.",
+                "weaknesses": "Long Multi-Target Ramp Up Time - The long multi-target ramp up time stems from the fact that it takes a significant amount of time to be able to  Moonfire all the mobs. This creates for significantly lower multi-target burst than many other classes. As for single target, building your initial Astral Power pool itself takes 10 - 15 seconds making you really slow off the start.\nLack of talent strength - Currently the base kit for Moonkin is pretty strong, while the talents themselves don't have much impact on damage. You’re forced into a couple of specific potential builds for fights with only ever a few flex points. This gives the Balance Druid player very little agency when deciding what to pick for the encounter, and can create issues especially when other classes are not balanced this way."
+            },
+            {
+                "id": 2,
+                "img": "https://classichardcore.com/wp-content/uploads/2023/06/feral-druid-1024x574.webp",
+                "title": "Feral Druid",
+                "description": "Feral Druid is a shapeshifting focused leather dps spec on a hybrid class. Feral's toolkit has decent AoE and single target with an emphasis on building and spending combo points and energy. Feral has decent off-healing and control to go along with their dps focus.",
+                "strengths": "Strong AOE options in the talent tree.\nStrong and frequently usable cooldowns with a good spread of cooldowns.\ndecent off healing capabilities.\nStrong defensive options, both baseline and as talent options.\nSome of the best mobility of any spec in the game.\nBrings  Mark of the Wild, a buff increasing versatility that is provided only by Druids",
+                "weaknesses": "A melee spec on a class that also has a ranged spec, healer, and a tank.\nTalent builds are pretty specialized, struggles to do ST with an AOE build or vice versa.\nEverything Feral brings is brought by another spec, leaving it fairly reliant on its tuning."
+            },
+            {
+                "id": 3,
+                "img": "https://www.mymac.com/wp-content/uploads/2023/05/Screenshot-2023-05-19-at-7.03.45-AM.png",
+                "title": "Guardian Druid",
+                "description": "Guardian Druid is a shape-shifting, leather wearing tank specialization with a mix of damage reduction, self-healing, and high mobility and high damage. While we often have to utilize shape-shifting to maximize our damage, our toolkit does allow us to survive some of the most dangerous encounters with ease as our thick hide protects us from great threats.\n\nGuardian is a great spec for new players as it has easily one of the most simplistic rotations in all of WoW.",
+                "strengths": "Strong passive damage reductions, both baseline and through talents.\nPowerful active physical mitigation through stackable, no-cooldown  Ironfur with 100% 1 stack uptime.\nDefensive spells with relatively short cooldowns; when used correctly, this makes for incredibly stable damage intake.\nRaid utility provided by  Stampeding Roar,  Convoke the Spirits/ After the Wildfire/ Dream of Cenarius if talented.\nExcels in high physical damage intake encounters, particularly with periods of ramping or high spike damage due to the massive rage gain from  Bristling Fur /  Blood Frenzy.",
+                "weaknesses": "Lacking great CC options in the talent tree.\nIt can be hard to get initial threat on things as much of your damage comes from DoT effects.\nNo unique niche or tank identity."
+            },
+            {
+                "id": 4,
+                "img": "https://www.wowisclassic.com/media/CACHE/images/contents/7658/e18e957b-b113-4117-ab1c-5eb7323cd816/6de28628415a587b06327c46968f831a.jpg",
+                "title": "Restoration Druid",
+                "description": "Resto Druid is a ramp-based healing specialization which means we use spells like  Rejuvenation to prepare for damage in advance and create huge windows of healing. Want more tank healing? Consistency? Bigger cooldowns? Resto Druid is versatile enough to cover it all. Druid wears Leather armor and tends to have an extensive collection of defensive spells to get you through any scenario. Resto also has a lot of shapeshifting baked into its gameplay (especially in dungeons) and you'll masquerade as a Cat, a Bear, a Tree, a Stag and sometimes a Bird - most with their own unique set of abilities.\n\nDruid also gets unique forms for each of its shapeshifts depending on which race you're playing! Alliance Druids will get to pick from Night Elf, Worgen and Kul Tiran. Horde Druids can choose from Tauren, Troll, Highmountain Tauren, and Zandalari Troll. Note that some of these are `allied races` and will have some unlock requirements.\n",
+                "strengths": "Exceptional number of impactful cooldowns:  Tranquility,  Incarnation: Tree of Life, and  Flourish.\nCan concentrate HoTs on a single ally for excellent single-target healing.\nExtremely High mobility with additional mobility cooldowns. Strong sustained healing even while moving.\nGood damage when you fully commit to dealing damage.\nOutstanding survivability especially for a healer.",
+                "weaknesses": "Requires significant setup and precise timing of cooldowns to maximize throughput.\nFewer responses to unpredictable burst damage. Middling spot healing.\nFairly low damage in raid.\nA decent portion of your healing is not very interactive via  Grove Guardians."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "img": "https://static.wikia.nocookie.net/wowpedia/images/0/01/Emberthal_cinematic.jpg/revision/latest/scale-to-width-down/1200?cb=20221213233246",
+        "title": "Evoker",
+        "description": "Created by Neltharion and asleep for millennia within the Dragon Isles, these Mail-wearing, draconic casters known as the Dracthyr use their dragon physiology and the combined power of the five Dragonflights to unleash devastating attacks from a distance or heal wounds from their allies.\n\nThere are three specializations available to Evokers: Augmentation (Support DPS), Devastation (Ranged DPS) and Preservation (Healer).",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://wowarticles.global.ssl.fastly.net/wp-content/uploads/2022/12/Devastation-Guide.webp",
+                "title": "Devastation Evoker",
+                "description": "Do you like dragons? Have you ever wondered what it would be like to fly above your enemies while raining down volcanic death from above? Do you like the idea of playing a Ranged caster that feels like more of a Battlemage with flashy spells? Evoker might be for you.\n`Your awakening was unprecedented, but the time has come to claim your place in the world of Azeroth. The Dragon Isles are waiting for you to discover your purpose and awaken your wing mates in your new adventures. You will not be so easily contained.`\nDracthyr Evokers are elite soldiers that combine the essence of dragons and adaptability of mortal races to wield the magic of all five dragonflights. Evoker has three specializations: Devastation for damage, Augmentation as a support damage dealer, and Preservation for healing.",
+                "strengths": "Strong AoE and Priority damage on new targets.\nAmazing and unique Utility spells.\nStrong Two Target cleave.\nDecent survivability with armor to mitigate physical damage.\nFantastic mobility and the ability to control of your character when falling with Glide.\nOff-healing as a DPS with an incentive to throw healing spells sporadically, by providing damage with Scarlet Adaptation and Ancient Flame.",
+                "weaknesses": "25 yard max range as a Ranged Caster.\nExtremely high threat (agro), with no way to mitigate it.\nNo spread cleave if targets are separated.\nNo immunity, and very susceptible to random damage, since all defensives need to be used before the damage is done.\nOff-healing requires stopping your damage in most cases and is much weaker than some of the classes.\nShares the same class as Augmentation, which overshadows most DPS (This is only a weakness if you don't enjoy the support playstyle)."
+            },
+            {
+                "id": 2,
+                "img": "https://render.worldofwarcraft.com/us/character/illidan/101/224302949-main.jpg",
+                "title": "Preservation Evoker",
+                "description": "Preservation Evoker is an extremely unique healing spec with multiple resources (mana & essence) and a new type of spell called Empowered Casts that are stronger the longer you charge them for. They're a slow paced healer but each spell has a massive impact. It's also the only mid-range class in the game with Devastation getting a 25 yard range on all spells and Preservation getting 30. Preservation has strong mobility, strong damage capabilities and an assortment of different spell combos that can be adapted to any healing requirement you run into.\n\nNew Evokers start at level 58 instead of level 1 due to being the latest hero class. We're also locked to the Dracthyr race no matter if we're Horde or Alliance.",
+                "strengths": "Some extremely strong cooldowns like  Rewind.\nEmpowered casts are very strong, and available often.\nStrong defensives and self-healing.\nCan also contribute significant damage through a fight or dungeon.\nAn assortment of mobility cooldowns.\nCool animations and a great theme.",
+                "weaknesses": "Very low range for a healer which can be frustrating on some fights.\nAll of our strong healing casts prefer a stacked group. Healing lacks when the group is spread."
+            },
+            {
+                "id": 3,
+                "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/07/world-of-warcraft-dragonflight-evoker-augmentation.jpg",
+                "title": "Augmentation Evoker",
+                "description": "The Augmentation Evoker is a ranged DPS specialization unlike anything ever before seen in World of Warcraft.\n\nAugmentation uses the fearsome power of the Black Dragonflight to take control of the battlefield, capable of turning the tides of battle through unmatched support and utility, and by enhancing the strengths of the allies around them.\nYou three shall be the examples all dracthyr will follow.\nSarkareth, my devastator. You shall rend your foes with the powers of the red and blue dragonflights.\nViridia, my preserver. You shall heal our allies with the grace of green and bronze dragonflights.\nAnd Emberthal, you will wield the essence of the black dragonflight to augment all those around you with my power.\nDracthyr Evokers are Neltharion's elite soldiers, combining the essence of dragons and the adaptability of mortal races to wield the magic of all five dragonflights. Evoker has three unique specializations: Devastation, Preservation, and now Augmentation.\n\nAugmentation is the first ranged DPS specialization with two distinct goals in combat: dealing direct damage to enemies using the stalwart earth magic of the Black dragonflight, and empowering allies through a variety of Black and Bronze themed abilities. Augmentation Evokers have a variety of powerful tools at their disposal, from direct attacks which upheave the ground beneath enemies and launch them into the air, to inflicting temporal wounds on enemies, amplifying the power of nearby allies in the process.",
+                "strengths": "Highly accessible, easy to pick up gameplay and rotation.\nIncredibly high group damage potential by buffing the damage of yourself and nearby allies.\nFantastic survivability with  Defy Fate, as well as a variety of additional defensive options, along with bonus armor to mitigate physical damage.\nExceptional mobility through high uptime on  Hover, along with the ability to control of your character when falling with  Glide.\nProvide meaningful off-healing to the group even as a DPS player through unique effects like  Chrono Ward and  Molten Blood on top of the baseline Evoker toolkit.",
+                "weaknesses": "25 yard max range as a Ranged Caster remains a downside.\nDirect damage can be respectable but is highly limited; damage output truly relies on the effectiveness of allies in group content.\nGenerally speaking, effectiveness is significantly lowered should one of your buff targets die in combat.\nNo way to deal meaningful spread cleave damage.\nCurrent stat scaling seems to lag other DPS specializations, perhaps making individual upgrades somewhat less meaningful."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "img": "https://static.icy-veins.com/images/classic/og-images/hunter.jpg",
+        "title": "Hunter",
+        "description": "From an early age the call of the wild draws some adventurers from the comfort of their homes into the unforgiving primal world outside. Those who endure become hunters. Masters of their environment, they are able to slip like ghosts through the trees and lay traps in the paths of their enemies.\n\nHunters can DPS as all three specializations: Beast Mastery, Marksmanship, Survival.",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://assets.tentonhammer.com/guides/attached_images/000/011/812/medium/BMHunterHERO.jpg",
+                "title": "Beast Mastery Hunter",
+                "description": "Beast Mastery Hunter in Dragonflight is a fantastic spec that uses a mix of animal companions to ravage its foes, fulfilling a unique and well-defined class fantasy. If you are looking for an extremely mobile ranged DPS with a strong, pet-based class identity, then consider giving it a try.\n\nPossibly the biggest attraction to playing Beast Mastery is the spec's mobility. Beast Mastery is the only ranged DPS specialization in the game that can do 100% of its damage while moving, with no restrictions whatsoever (except for  Wailing Arrow). This provides a huge benefit in any sort of PvE content, as you can always do mechanics or deal with whatever is going on without wasting any damage, something no other ranged DPS can do. By combining this mobility with a powerful immunity in  Aspect of the Turtle, which can frequently be used to cheese mechanics, Beast Mastery Hunters are perfect for doing odd-jobs and any sort of mechanical challenges that raids and dungeons might present.\n\nDespite being ranged, most of your damage as a Beast Mastery Hunter come from your pets which have to be in melee range of the target. A large portion of this pet damage is controlled directly or indirectly by you as the Hunter rather than happening automatically. Pets also help Beast Mastery Hunters become great for solo content, by acting as tanks.",
+                "strengths": "Unlimited mobility: You can do all damage while moving.\nFew solid dungeon utility options such as  Primal Rage and  Tranquilizing Shot.\nGreat at soloing both old and new content.\nHas an immunity with  Aspect of the Turtle and solid emergency defensive buttons.\nDecent single-target damage and uncapped AoE.",
+                "weaknesses": "Pet AI is not perfect. Pets will often get stuck inside raids and dungeons, which requires dismissing and summoning them again. This can be quite annoying and frustrating to deal with on certain encounters.\nLimited ability to DPS multiple targets that are not stacked.\nLimited or awkward utility, especially in dungeons."
+            },
+            {
+                "id": 2,
+                "img": "https://static1-us.millenium.gg/articles/6/21/06/@/20277-1030398-mm-orig-1-amp_main_media_schema-1.jpg",
+                "title": "Marksmanship Hunter",
+                "description": "Marksmanship Hunter is a ranged-wielding, Mail-wearing DPS specialization that focuses on long-range, slow gameplay, with periods of extremely high burst damage delivered quickly. If you like taking down your enemies from afar with carefully considered, powerful shots while focusing on moving as little as possible, Marksmanship is a spec for you.",
+                "strengths": "Powerful opening burst, able to solo low-health adds quickly and efficiently.\nPowerful cooldowns that can be used strategically to make chokepoints of encounters easier.\nThe longest attack range of any spec, which has positional and flexibility benefits.\nVery high mobility.",
+                "weaknesses": "Squishy by default and relatively low on defensive cooldowns.\nWeak outside of its main cooldowns."
+            },
+            {
+                "id": 3,
+                "img": "https://static.murlok.io/web/classes/hunter_survival.webp",
+                "title": "Survival Hunter",
+                "description": "Survival is a Mail wearing melee DPS specialization that wields 2-handed Agility weapons. Unlike the other two DPS specs the Hunter class currently has access to; Survival provides you with a fast-paced melee-oriented DPS spec. They fight up close and personal with their loyal beast, using a combination of savage melee strikes, venom, and hand-made explosives—overwhelming their foes with unending ferocity and every tool at your disposal.",
+                "strengths": "High Mobility.\nStrong sustained single target and AoE damage.\nUnique throughput utility in  Hunter's Mark\nTemporary Damage Immunity.\nHigh self-sustain.\nCan tame cute pets.",
+                "weaknesses": "Hunter's Mark can be annoying to use and can be fight dependent on usefulness.\nDefensives depend on you knowing what to use and when to use them.\nReliant on pet to generate resources and do damage.\nExtremely reliant on tuning to be competitive compared to other Hunter specs."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "img": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2019/09/Mage-cover-again.jpg",
+        "title": "Mage",
+        "description": "Students gifted with a keen intellect and unwavering discipline may walk the path of the mage. The arcane magic available to magi is both great and dangerous, and thus is revealed only to the most devoted practitioners. To avoid interference with their spellcasting, magi wear only cloth armor, but arcane shields and enchantments give them additional protection. To keep enemies at bay, magi can summon bursts of fire to incinerate distant targets and cause entire areas to erupt, setting groups of foes ablaze.\n\nMages can DPS as all three specializations: Arcane, Fire, Frost.\n",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://static.icy-veins.com/images/wow/class-guides/og-image-mage.jpg",
+                "title": "Arcane Mage",
+                "description": "Thematically, Arcane Mages are the masters of time and space. They are able to rewind the flow of time itself faster and more frequently than any other Mage spec, using this for healing or mobility. They are typically unmatched when it comes to burst damage.\n\nMechanically, Arcane Mage is a caster who specializes in heavy burst damage output in short windows, boasting great defensives and offensive tools for most situations. On top of high burst damage, Mages are one of the most defensive spell-casting classes in the game. If outranging the enemy with  Blink and  Frost Nova isn't enough, try absorbing or negating the damage with any one of a variety of tools:  Ice Block,  Prismatic Barrier,  Greater Invisibility or  Mirror Image - or even ignoring it entirely by resetting the flow of time with  Alter Time. In Dragonflight our toolkit is being added to with great utility and mobility spells as well.\n",
+                "strengths": "High burst damage against single and multiple targets using spells like  Arcane Surge and  Touch of the Magi.\nGood group utility with spells like  Time Warp,  Spellsteal,  Polymorph,  Remove Curse,  Blast Wave, and  Dragon's Breath.\nSingle target damage scales with number of enemies ( Resonance).\nMany powerful defensives make Mages one of the tankiest caster classes in the game:  Greater Invisibility,  Ice Block,  Alter Time,  Mirror Image and  Prismatic Barrier.\nGreat battlefield mobility with  Blink,  Alter Time and  Shimmer/ Master of Time.",
+                "weaknesses": "Must be able to line-up burst and execute well in order to deal effective DPS.\nMust be near melee range to use  Arcane Explosion effectively in AOE situations.\nNo self-healing to recover from a big hit; all defensives are based on damage prevention.\nVery punishing if you overspend mana, mana is a tool and has to be used properly."
+            },
+            {
+                "id": 2,
+                "img": "https://bunny-wp-pullzone-yxpognpnm6.b-cdn.net/wp-content/uploads/sites/31/2023/08/WoW-Fire-Mage-Guide.webp",
+                "title": "Fire Mage",
+                "description": "If you have ever wondered why the saying is `fight fire with fire` instead of `fight everything with fire`, then perhaps Fire Mage is the specialization for you. From the fire we stand in during raids, to the Pyroblasts of the Defias Pillagers, fire has always been one of the most deadly schools of magic in World of Warcraft. Fire Mage has always been known for its offensive focus, high damage, and cleave in the form of  Mastery: Ignite. If you are looking for a specialization that lets you turn your enemies into bonfires with legs, spreading their flame to other nearby enemies, then look no further.\n\nFire Mage is a cloth wearing caster damage dealer and one of a handful of ranged caster specializations in World of Warcraft that focuses on cleave rather than spread damage over time. It is a very high burst playstyle, as most of your damage comes during your  Combustion. Outside of cooldowns, the playstyle revolves around its stable flow of generating  Heating Up then  Hot Streak! from critical strikes while  Mastery: Ignite burns your target for additional fire damage.",
+                "strengths": "Sacrificing single target damage isn't required to cleave with  Mastery: Ignite.\nHigher damage at high health and during execute.\nVery strong burst for Single Target and AoE via  Combustion.\nExtreme survivability with  Greater Invisibility,  Blazing Barrier,  Cauterize,  Mirror Image,  Alter Time, and  Ice Block. Fire Mage is the only ranged specialization to have a cheat death built in.\nThe best mobility of any Mage spec with  Shimmer,  Alter Time,  Hot Streak!, and  Scorch.",
+                "weaknesses": "Little to no talent variety.\nNo spread cleave if targets are separated.\nHarsh playstyle that is a bit technical and punishing if mistakes are made.\nVery little passive damage reduction and no reactive self-healing.\n Sun King's Blessing encourages frequent hardcasting."
+            },
+            {
+                "id": 3,
+                "img": "https://classichardcore.com/wp-content/uploads/2023/06/frostmage_single-1024x574.webp",
+                "title": "Frost Mage",
+                "description": "Frost Mage is a cloth wearing ranged damage dealer with a fast-paced playstyle thanks to its built in sources of haste that excels at damaging and kiting stacked enemies. Frost Mages enjoy some substantial bonus damage when fighting targets that can be frozen by their roots thanks to  Shatter, which includes most non-boss enemies. In addition, Mage as a class has some of the most personal utility in the game, which gives them exceptional ability to survive dangerous situations that would either kill other classes thanks to mobility spells like  Blink and defensive cooldowns like  Ice Block.",
+                "strengths": "Flexible damage profile that provides substantial burst during  Icy Veins, while not being too weak without it.\nVery effective against two stacked targets with  Splitting Ice.\nExtra damage to rootable enemies thanks to  Shatter.\nExtreme survivability with numerous defensives, including  Ice Barrier,  Ice Block/ Ice Cold (twice with  Cold Snap),  Alter Time,  Mirror Image and  Invisibility, and  Greater Invisibility.\nStrong mobility with  Shimmer/ Ice Floes,  Alter Time, and instant cast procs.\nBattlefield control with many tools to slow and root enemies, such as  Frost Nova,  Freeze and  Frostbolt.",
+                "weaknesses": "Thanks to  Thermal Void,  Icy Veins can last long enough that it will sometimes be hard to fully avoid downtime during it.\nNo spread cleave if targets are separated.\nLimited sustained self healing makes it easy to die to continuous damage intake."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "img": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltab8e835ed1f245ba/5ee793cb3a8621077a04a491/80E3HJ653J1M1457032234443.jpg?auto=webp&quality=75",
+        "title": "Monk",
+        "description": "When the pandaren were subjugated by the mogu centuries ago, it was the monks that brought hope to a seemingly dim future. Restricted from using weapons by their slave masters, these pandaren instead focused on harnessing their chi and learning weaponless combat. When the opportunity for revolution struck, they were well-trained to throw off the yoke of oppression.\n\nMonks have three specializations: Brewmaster (Tank), Mistweaver (Healer), and Windwalker (DPS).",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://simple-carry.com/cdn/shop/articles/4bad3ea4f15ea2532b7360da2e13a1596e49ab74_hq_1445x.webp?v=1687485205",
+                "title": "Brewmaster Monk",
+                "description": "Brewmaster Monks are a leather wearing tank specialization that combines damage smoothing, a fluid base rotation, tons of mobility, and a powerful collection of offensive and defensive cooldowns. In the years since they were introduced in Mists of Pandaria, Brewmaster Monks have consistently been one of the top tank specs in the game, and they are usually very well-represented at the highest levels of raiding.",
+                "strengths": "Durability:  Stagger,  Shuffle, and  Celestial Fortune make Monks great at surviving all kinds of damage.\nMobility:  Roll,  Tiger's Lust, and  Transcendence combine to give Monks extremely high mobility.\nOffense: Monks have a huge collection of offensive cooldowns, and they are incredibly good at dealing AoE damage.\nUniqueness: Monks are the only source of  Mystic Touch, along with the  Windwalking,  Close to Heart, and  Generous Pour auras.\nVersatility: Monks carry a tool for every occasion, be it crowd control ( Paralysis), dispelling ( Detox), displacement ( Ring of Peace), or AoE stunning ( Leg Sweep).",
+                "weaknesses": "Complexity: Brewmasters require a LOT of keybinds, as there is a huge collection of core rotational skills, offensive cooldowns, defensive cooldowns, and mobility skills.\nHealth Pool: Brewmaster Monks have the smallest health pool of any tank. This sometimes makes them more vulnerable to sustained spell damage and damage-over-time effects.\nMistakes: Your playstyle can be unintuitive at times, with heavy punishments for making basic mistakes at the wrong moments.\nOutside tools: You are more likely to require specific addons or WeakAuras on a Brewmaster than other tank specializations, especially for  Stagger.\nSelf-sustainability: As a Brewmaster, you will fluctuate between feeling invincible and being completely at the mercy of your healer, due to relying almost exclusively on  Expel Harm,  Gift of the Ox, and  Celestial Fortune for self-healing."
+            },
+            {
+                "id": 2,
+                "img": "https://o.aolcdn.com/hss/storage/midas/3e277b004a60d0b6ebb78f2824095133/200301981/580monk-renewing-mist-wowhead.jpg",
+                "title": "Mistweaver Monk",
+                "description": "Mistweaver Monks are a melee-based healer, where we're able to heal our allies and deal damage to our enemies from a centralized location. From this position, we're able to use our high mobility to react appropriately to encounter mechanics, using either abilities that directly affect our movement itself, or spells that can be cast while moving, allowing us to continue healing while we reposition.\n\nMistweavers wear leather armor and are fond of wielding either staves or one-handed weapons while holding additional off-hand equipment. While there are spells we can cast in preparation for damage, our major healing abilities are used as a reaction to damage. We also have healing cooldowns that can be altered through talents to better suit a given encounter's damage patterns, giving us great flexibility when preparing for any encounter.\n",
+                "strengths": "Melee-focused. Certain mechanics will never target you, giving you higher uptime than others.\nHealing cooldowns can be changed or augmented easily for specific scenarios.\nHighly mobile healer lends to quick execution of mechanics or repositioning.\nExtremely durable with several defensive cooldowns available.\nQuick, impactful damaging abilities let it weave in damage when healing requirements are low.",
+                "weaknesses": "While sustained single target healing is great, it is extremely mana hungry.\nWhile the skill floor is rather accessible, the skill ceiling can be relatively high.\nThe learning curve can be a bit steep for players new to the specialization, especially those new to being in melee, where you need to be acutely aware of where the bosses are facing and where the tanks are.\nYou need to be aware of your mana, so that you're not running on fumes before the end of the fight."
+            },
+            {
+                "id": 3,
+                "img": "https://skycoach.gg/storage/uploads/blog-posts/211/images/211_1683623146_900x700.jpg",
+                "title": "Windwalker Monk",
+                "description": "Windwalker Monk is a dual-wielding or 2-hand using, leather-wearing damage specialization with a mix of damage reduction, self-healing, high mobility and enemy control.",
+                "strengths": "Jack of all trades.\nNearly unparalleled mobility potential.\nStrong burst and sustained stacked AOE and Cleave.\nLittle to no damage loss from target switching.",
+                "weaknesses": "Jack of all trades, master of none.\nLacking an immunity.\nHistorically, poor scaling throughout an expansion without buffs."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "img": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/02/world-of-warcraft-the-unwritten-rules-playing-paladin-explained-feb-2024.jpg",
+        "title": "Paladin",
+        "description": "This is the call of the paladin: to protect the weak, to bring justice to the unjust, and to vanquish evil from the darkest corners of the world. These holy warriors are equipped with plate armor so they can confront the toughest of foes, and the blessing of the Light allows them to heal wounds and, in some cases, even restore life to the dead.\n\nPaladins have three specializations: Holy (Healer), Protection (Tank), and Retribution (DPS).",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://www.yourgamingdude.com/public/image/HolyPaladin.jpg",
+                "title": "Holy Paladin",
+                "description": "Holy Paladin is a One-handed weapon, shield and plate wearing healer specialization with a wide range of damage reductions and defensives. We specialize in healing specific targets with large single target heals, commonly referred to as “spot healing”. Holy Paladin gets access to the iconic  Beacon of Light at level 16, which allows us to keep a specific target healed while healing other allies who might need it!\n\nBesides the classic healer resource, mana, all Paladin specializations, including Holy, also use the combo-point-esque special resource called Holy Power. Most of our spells generate this resource which we can then use to cast our most powerful heals,  Word of Glory and  Light of Dawn.\n",
+                "strengths": "Strong single target spot healing.\nStrong passive tank healing.\nGood survivability including an immunity.\nPowerful external defensives in  Blessing of Sacrifice and  Blessing of Protection.\nBrings  Devotion Aura or  Retribution Aura, either a raid wide damage reduction, or a damage and healing increase. Both can be empowered by  Aura Mastery to either a 12% damage reduction or 15% healing increase.",
+                "weaknesses": "Poor mobility.\nCombo Point like resource system.\nLow agency over mana consumption.\nRequires a lot of keybinds due to button bloat."
+            },
+            {
+                "id": 2,
+                "img": "https://static1-us.millenium.gg/articles/2/22/02/@/21903-1037079-protection-orig-1-article_cover_bd-1.jpg",
+                "title": "Protection Paladin",
+                "description": "The call of the Dragons has sounded. The Holy Warriors of the Light will need to rise up to assist the Aspects in their struggle to reclaim and defend the Dragon Isles. There are forces at work that threaten our collective existence and seek to undo the forces of order. Will you answer the call?\n\nAs a Paladin, you will wield the Light to support your allies and smite your foes. Protection Paladin is a spec that is good for players that enjoy a classic tank feel combined with the ability to self-heal considerable damage and support your allies.",
+                "strengths": "Excellent group utility, like blessings that provide unique benefits such as  Blessing of Sacrifice,  Blessing of Freedom, or  Blessing of Protection to your party and raid members.\nStrong healing abilities with  Word of Glory and  Hand of the Protector to help keep themselves and their party alive.\nVery good at dealing with Magic and Bleeds with a variety of tools like  Blessing of Protection,  Divine Shield,  Blessing of Spellwarding,  Holy Shield. We also have passive reduction to all damage through  Mastery: Divine Bulwark.\nMultiple CC's through  Hammer of Justice,  Turn Evil,  Blinding Light and  Repentance\nCan remove poisons or diseases from yourself and party members with  Cleanse Toxins.",
+                "weaknesses": "It can take a few seconds into combat to get your first  Shield of the Righteous active. You can use  Ardent Defender on the pull to off-set this.\nHas the second lowest health pool of all tanks.\nProtection Paladin is generally very punishing if you make mistakes and can be very unforgiving. You have very short/small windows to react to damage and if you are caught unprepared, you could just die.\nVery limited mobility as  Divine Steed is the only baseline ability to move faster."
+            },
+            {
+                "id": 3,
+                "img": "https://static.icy-veins.com/images/wow/class-guides/og-image-paladin.jpg",
+                "title": "Retribution Paladin",
+                "description": "Retribution Paladins are holy crusaders, who use a two-handed weapon to turn the power of the light into powerful damaging abilities and bring justice and vengeance to their enemies. It's the damage specialization of Paladin and is a melee spec, although it has a few abilities that can be cast from range as well.\n\nThe core of our rotation is centered around using abilities like  Blade of Justice and  Judgment to generate Holy Power, which is consumed to deal devastating damage with abilities like  Templar's Verdict or  Divine Storm. Although Paladin's mobility options are somewhat limited, you will have access to a large array of buffs for yourself and your party to help you throughout a fight, as well as strong defensive and healing capabilities for your role.\n\nIf playing a melee with strong group support and healing options and also some very powerful burst damage cooldowns sounds appealing, then Retribution might be for you.",
+                "strengths": "Easy to learn playstyle that doesn't punish mistakes harshly.\nMany strong defensive tools, both passive abilities and active ones like  Divine Shield and  Divine Protection.\nPlenty of utility options that will usually find uses in any type of content.\nStrong options for both self healing and helping heal your group if needed.",
+                "weaknesses": "Requires many items that are difficult to acquire to perform to its maximum potential in high end content, such as Fyr'alath the Dreamrender Fyr'alath the Dreamrender.\nTalent tree design can make it difficult to do both decent single target and AoE damage with a single build.\nOn the low side for mobility;  Divine Steed is your main option."
+            }
+        ]
+    },{
+        "id": 9,
+        "img": "https://miro.medium.com/v2/resize:fit:1024/1*aXyI7dDMb3ly9p42o1mKgw.png",
+        "title": "Priest",
+        "description": "Priests are devoted to the spiritual, and express their unwavering faith by serving the people. For millennia they have left behind the confines of their temples and the comfort of their shrines so they can support their allies in war-torn lands. In the midst of terrible conflict, no hero questions the value of the priestly orders.\n\nPriests can heal as the Discipline and Holy specializations, or DPS as Shadow.",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://static1-us.millenium.gg/articles/8/21/78/@/21501-1029156-disc-orig-1-article_cover_bd-1.jpg",
+                "title": "Discipline Priest",
+                "description": "Discipline Priest in Dragonflight is a masterful raid-wide burst healer with absorbs and damage reduction utility. They prepare for incoming damage by marking players with helpful buffs in  Atonement that allow the Discipline Priest to deal substantial damage to the boss to create healing on those marked allies.\n\nWith this, there is a natural ebb and flow to Discipline's healing where they  `ramp up` their  Atonement counts to increase their healing and then rest between these ramps, providing minor healing in between their large bursts.",
+                "strengths": "Excellent burst healing to counter heavy raid damage.\nHeals by dealing damage to enemies, strong passive damage contribution to the raid.\nExcellent single-target absorbs that contribute excellent tank and priority target healing.\nProvides strong utility to the raid with heavy damage reduction cooldowns in  Power Word: Barrier and  Pain Suppression.",
+                "weaknesses": "Frequently needs to plant in place to setup big healing.\nWhile Disc embodies healing via damage dealing, this also requires the player to be in range of an enemy to consistently attack, so encounters where enemies die quickly, move out of range rapidly, or move out of line of sight can cause issues.\n`Ramping` commits a large amount of the player's mana so poor timings or overlapping cooldowns can be particularly punishing."
+            },
+            {
+                "id": 2,
+                "img": "https://felbite.com/wp-content/uploads/2022/04/felbite.com-holy-priest-wotlk-pre-raid-bis-list-priest-world-of-warcraft-wow-min.jpg",
+                "title": "Holy Priest",
+                "description": "Holy Priest in Dragonflight is a flexible healer bringing significant single-target and Area of Effect healing. In either situation you are spreading Healing Over Time effects from the specialization's Mastery  Mastery: Echo of Light.\n\nThey bring multiple raid cooldowns in  Divine Hymn and  Holy Word: Salvation along with defensive cooldown reduction in  Symbol of Hope.\n",
+                "strengths": "Very flexible healing, thanks to the  Miracle Worker talent in Dragonflight, with all direct healing abilities causing a Healing Over Time effect afterwards  Mastery: Echo of Light.\nRaid oriented cooldowns that can restore health, reduce defensive cooldowns or mana to the group.  Symbol of Hope/ Divine Hymn/ Holy Word: Salvation\nCan heal through death for a short period of time with Spirit of Redemption",
+                "weaknesses": "Lacks many mobile or instant cast abilities and can be impeded on specific encounters with high movement requirements.\nPrefers some stacked players to properly take advantage of  Holy Word: Sanctify.\nLacks the personal defensive strength of that other healers have."
+            },
+            {
+                "id": 3,
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0E7wpRS8bg-yMJJjcxkdr2nZUtHX6c8NUfPZCofOzQ&s",
+                "title": "Shadow Priest",
+                "description": "Shadow Priest is a ranged cloth dps specialisation with a mix of direct damage and damage over time spells. The spec predominantly focuses on dealing Shadow damage and most of its defensive capabilities are linked to its self healing. Priests in general are very slow, and Shadow is no exception with no baseline displacement or movement abilities you'll have to plan movement in encounters ahead of time, as well as use the few kiting tools you have available to their maximum advantage. Shadow Priests also have the ability to empower the damage of their allies, as well as themselves, and are a dps spec focused on dealing maximum damage in burst windows every minute with numerous stacked cooldowns.",
+                "strengths": "Shadow Priests excel at single and priority target damage. They also have access to spread cleave through multi dotting.\nShort cooldown defensives and strong self healing make Shadow highly durable in endgame content.",
+                "weaknesses": "Shadow's multi dotting is weaker than it has been in previous expansions, making spread cleave less of an important niche.\nShadow's damage outside of cooldowns, and especially whilst cleaving, requires you to stand still to be most effective.\nShadow lacks powerful mobility choices and the ability to kite.\nHeavy reliance on specific talent builds that are tailored to specific content."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "img": "https://static.wikia.nocookie.net/wowpedia/images/3/3e/Sonya_Shadowdancer.jpg/revision/latest/scale-to-width-down/750?cb=20230226141501",
+        "title": "Rogue",
+        "description": "For rogues, the only code is the contract, and their honor is purchased in gold. Free from the constraints of a conscience, these mercenaries rely on brutal and efficient tactics. Lethal assassins and masters of stealth, they will approach their marks from behind, piercing a vital organ and vanishing into the shadows before the victim hits the ground.\n\nRogues can DPS as the Assassination, Outlaw, and Subtlety specializations.",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://static.icy-veins.com/images/wow/class-guides/og-image-rogue.jpg",
+                "title": "Assassination Rogue",
+                "description": "Assassination Rogue is a dual-wielding, leather-wearing DPS specialization specializing in Damage-over-Time effects. This powerful Nature and Bleed based damage is augmented by a full arsenal of cooldowns to further assassinate any enemies in our way. Being a Damage-over-Time based specialization does make us slower than our fellow Subtlety and Outlaw Rogues, but don't mistake slower gameplay as less potent!",
+                "strengths": "Good single target and melee cleave damage focusing on damage over time effects through bleeds and poisons.\n Caustic Spatter allows for strong cleave without giving up single target damage\nSlow paced and easy to play Rogue spec, leaving more capacity to concentrate on boss mechanics and correct play. Good progression spec.\nFair kit of mobility and utility.\nIs a rogue spec that can bring  Atrophic Poison.",
+                "weaknesses": "AoE playstyle has a lot of things to focus on rotationally and will require a good amount of effort and knowledge\nLong opener and ramp-up time on cooldowns can lead to a lack of burst on short-lived enemies.\nDoes not bring anything special to a raid composition over the other rogue specs."
+            },
+            {
+                "id": 2,
+                "img": "https://static.murlok.io/web/classes/rogue.webp",
+                "title": "Outlaw Rogue",
+                "description": "Want to play a Rogue who fears no-one and jumps bravely into the fray? A combatant who uses one-handed weapons to stand their ground in open combat and unleash a whirlwind of attacks against one or multiple enemies? A master of arms who can also rely on a concealed pistol to support them in combat and surprise the enemy? In that case, you may want to give Outlaw a try!\n\nLike any Rogue spec, Outlaw uses Energy to attack targets. These attacks can usually be classified as either a Builder, that generates Combo Points, or a Finisher, that consumes these Combo Points for a powerful strike.\n\nOutlaw is a very fast-paced spec where you can hit a lot of buttons for direct damage. It has the iconic  Blade Flurry mechanic, allowing you to do AoE damage by continuing with your standard rotation, instead of relying on AoE-specific abilities and rotations.\n\nOften seen as a somewhat deterring aspect of the spec,  Roll the Bones is not very transparent to newcomers, but adds some variance to how it performs. You should not let that interfere with your enjoyment of this specialization.",
+                "strengths": "Strong AoE damage against up to 5 targets, all while doing their regular single target rotation, thanks to  Blade Flurry.\nFun and fast-paced spec with a lot of abilities to press. Built around a lot of continuous cooldown reduction via  Restless Blades.\nGood kit of mobility and utility.",
+                "weaknesses": "Reliance on cooldown reduction also means Outlaw suffers the most from downtimes and not being able to hit the boss with abilities.\nPlayball of DPS tuning because many other classes can do utility things better than we can.\n Blade Flurry is target capped to only let Outlaw hit 5 targets at a time, can be increased to 8 with talents.\nNot everyone likes the random element from  Roll the Bones."
+            },
+            {
+                "id": 3,
+                "img": "https://main.judgehype.com/images/froala/2017/04/1492180510_6.jpg",
+                "title": "Subtlety Rogue",
+                "description": "Subtlety Rogue is a dual-wielding, leather-wearing damage specialization with a focus on providing short cycles of high damage and a major cooldown for an extended burst every two minutes. It is the rogue spec with  Shadow Dance as its signature ability and can utilize this ability the most.\nThe Spezialisation loves to stack cooldowns and the gameplay is centralized around smaller damage windows with  Shadow Dance which when combined with other cooldowns can lead to high burst damage.\nIf high highs during cooldowns and low lows outside of them sound exciting to you, Subtlety is the perfect choice.",
+                "strengths": "Strong burst damage every two minutes with talent options to reduce it.\nGood single target damage with a focus on the ability to deal priority damage in AoE situations due to  Shuriken Storm, which gives combo points for each enemy it hits.\nFair sustained AoE.\nFast-paced during cooldowns but slower outside.",
+                "weaknesses": "Less forgiving to play and less resistant to downtimes than competing Rogue specialisations.\nWeak low target (2-3 targets) cleave damage.\nNo impressive burst AoE. The choice between  Eviscerate for priority damage or  Black Powder for pure AoE means you always trade off either single target or AoE damage.\nPlayball of DPS tuning."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "img": "https://wow.zamimg.com/uploads/screenshots/normal/177064-shaman-thrall-part-of-the-battlecry-anniversary-wallpaper-by-wei-wang.jpg",
+        "title": "Shaman",
+        "description": "Shaman are spiritual guides and practitioners, not of the divine, but of the very elements. Unlike some other mystics, shaman commune with forces that are not strictly benevolent. The elements are chaotic, and left to their own devices, they rage against one another in unending primal fury. It is the call of the shaman to bring balance to this chaos. Acting as moderators among earth, fire, water, and air, shaman summon totems that focus the elements to support the shaman’s allies or punish those who threaten them.\n\nShamans have three specializations: Elemental (Ranged DPS), Enhancement (Melee DPS), and Restoration (Healer).",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://www.warcrafttavern.com/wp-content/uploads/2020/12/Elemental-Shaman-1024x576.jpg",
+                "title": "Elemental Shaman",
+                "description": "Elemental Shaman is a mail-wearing ranged DPS caster with many great spell effects and different flavours of abilities, wielding Nature, Fire and Frost spells to damage its opponents.\n\nWe can use staffs or one-handed maces with shields and, depending on our builds, switch between very sturdy and very mobile depending on the encounter.\n\nAs a class with a healing specialization in Restoration, we excel at off-healing our teammates and, in general, providing various utility with our totems.\n\nElemental Shaman is the spec to play for people who love playing a caster that can specialize in helping their teammates or just like to look at impressive spell effects.",
+                "strengths": "Good damage in all situations\nLots of different utility options are available via talents.\nVery high availability on its utility with lots of CDR.\nA myriad of small personal cooldowns that allow us to weather consistent damage spikes well.",
+                "weaknesses": "No major defensive cooldowns that would allow us to soak mechanics for the raid.\nNo major raid utility to speak of that allows us to stand out from others in the same role.\nBad scaling past 6 targets."
+            },
+            {
+                "id": 2,
+                "img": "https://static.icy-veins.com/images/wow/class-guides/og-image-shaman.jpg",
+                "title": "Enhancement Shaman",
+                "description": "Enhancement is a high intensity melee spec that involves juggling many different abilities and effects to deal damage at a fast pace. Their main focus involves using elemental-infused melee strikes like  Stormstrike,  Lava Lash, and  Ice Strike to generate  Maelstrom Weapon stacks, which are consumed to cast powerful spells. It's well-suited for players that enjoy a close up battlemage playstyle with an emphasis on moment-to-moment decision making based on proc, resource and cooldown management.",
+                "strengths": "Array of different Talent builds allowing you to customize your playstyle and cooldown loadout.\nMasters of Flexibility, with strong single target while also being able to specialize in 2-6 target Cleave or Funnel playstyles at little cost.\nAccess to a variety of AoE crowd control tools and a low cooldown ranged interrupt.\nTalents provide a suite of niche tools with offensive and defensive dispelling options.\nGood mobility and can get out of most situations.\nOff-healing tools and a powerful cooldown in  Ancestral Guidance.\n Windfury Totem provides bonus damage to other melee players in your party.",
+                "weaknesses": "Requires a lot of keybinds and mistakes are punishing, with a steep learning curve.\nMost strong AoE tools cap out at 6 targets, with no good way to deal with uncapped AoE.\nNo naturally regenerating resource paired with built-in CDR mechanics means uptime is extremely important to maintain the rotational flow.\nNo `immunity` and long cooldown defensives, meaning you need to plan ahead and possibly sacrifice damage to survive.\nA lot of utility tools are more niche for raids, and don't define strategies.\nBoth popular builds have a degree of unavoidable RNG."
+            },{
+                "id": 3,
+                "img": "https://static1-us.millenium.gg/articles/7/21/87/@/21687-1036185-resto-orig-1-amp_main_media_schema-1.jpg",
+                "title": "Restoration Shaman",
+                "description": "Restoration Shaman call upon the healing properties of water and their iconic totems to keep their group members alive using Mana Mana as the primary resource. We can see far into the distance with  Far Sight and have our own separate Hearthstone with  Astral Recall.\n\nWe have a wide range of spells and tools to do our job, most of them being more effective when the group stacks closely together. We have some supportive Healing over Time spells, and decent single target heals. This is accompanied by strong cooldowns which can get you out of dangerous situations easily, quite a bit of utility, and the ability to restore Mana Mana to ourselves and allies.\n\nWe can shift into  Ghost Wolf and cover a lot of ground quickly, but are unable to cast spells while transformed.",
+                "strengths": "Specializes and excels in stacked healing, still does well in non-stacked situations.\nRaid cooldowns that don't require channeling.\nThe ability to bring an extra combat rez with  Ancestral Protection Totem, which doesn't count against the combat rez limit. Can be used as a general safety tool or to sacrifice people on purpose and mitigate whole mechanics.\n Spiritwalker's Grace enables us to deal with some heavy movement mechanics other healers can't.\nDecent survivability especially for a healer.",
+                "weaknesses": "One of two specs in the game without a mandatory Raid or Party buff.\nNo tank cooldown, requires raw healing instead.\nLong cast times outside of cooldowns.\nSome cooldowns like  Spirit Link Totem can be hard to get value out of compared to other damage reductions."
+            }           
+        ]
+    },
+    {
+        "id": 12,
+        "img": "https://overgear.com/guides/wp-content/uploads/2023/10/warlock-orc-race-for-hardcore-leveling.jpg",
+        "title": "Warlock",
+        "description": "In the face of demonic power, most heroes see death. Warlocks see only opportunity. Dominance is their aim, and they have found a path to it in the dark arts. These voracious spellcasters summon demonic minions to fight beside them. At first, they command only the service of imps, but as a warlock’s knowledge grows, seductive succubi, loyal voidwalkers, and horrific felhunters join the dark sorcerer’s ranks to wreak havoc on anyone who stands in their master’s way.\n\nWarlocks can DPS as all three specializations: Affliction, Demonology, Destruction.",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://static1-us.millenium.gg/articles/6/19/86/@/18093-1031646-alffli-1000x0-1-article_m-2.jpg",
+                "title": "Affliction Warlock",
+                "description": "Affliction Warlock is a cloth wearing dps caster which focuses on defeating its enemies with a large selection of damage over time abilitys (or DoTs), and nukes that benefit greatly from those DoTs. As a warlock, affliction has access to one of the best defensive toolkits in the game, in addition to having some of the best consistent damage for spread targets amongst any of the classes in game.",
+                "strengths": "Improved rotational playstyle with  Dread Touch being 8 seconds.\nHighly customizable spec which can be tailored to fit multiple encounters.\nGreat burst AOE thanks to  Doom Blossom and  Sow the Seeds\nGood survivability via Class Tree Talents,  Soul Leech, and strong personal cooldowns.",
+                "weaknesses": "Less than mediocre damage when it comes to priority target swaps.\nAfflictions rotation can be a bit daunting to those unfamiliar with the spec.\nWith recent nerfs, the spec cooldowns are incredibly weak."
+            },
+            {
+                "id": 2,
+                "img": "https://static.icy-veins.com/images/wow/class-guides/og-image-warlock.jpg",
+                "title": "Demonology Warlock",
+                "description": "Demonology is known to be a master of demons, constantly summoning new Dreadstalkers, Wild Imps, controlling your Felguard and summoning a plethora of other demons with  Nether Portal and buffing any and all demons through  Summon Demonic Tyrant.\n\nOur primary resource are  Soul Shards] which we both generate and spend with a number of abilities in our overall toolkit.",
+                "strengths": "Survivability and tankiness\nHigh variety of talent options for variety of group compositions\nSolo ability is quite strong due to pet tanking and overall self healing\nProvides the option for instance skips with  Demonic Gateway and  Soulstone",
+                "weaknesses": "No immunity\nRamp time for DPS can be considered higher than others\nLow burst DPS in most situations outside of cooldowns"
+            },{
+                "id": 3,
+                "img": "https://static1-us.millenium.gg/articles/9/19/89/@/18132-1031685-destro-orig-1-amp_main_media_schema-3.jpg",
+                "title": "Destruction Warlock",
+                "description": "Destruction has always been known as a spec that excels at dealing large hits through  Chaos Bolt and very strong cleave damage through  Havoc.\n\nOur primary resource is Soul Shards which we both generate and spend with a number of abilities in our kit. We can choose to either spend them on  Chaos Bolt which is a single target ability or  Rain of Fire with is an AoE ability that deals damage over time.\n\nWe're known as the Warlock spec that deals its damage in big hits and doesn't rely on pets doing the dirty work for us. That's still the case to this very day, although we've become known for our signature cooldown  Summon Infernal making for a very strong companion when popped.",
+                "strengths": "Good sustained single target damage.\nVery high 2-target burst damage with  Havoc.\nAdds utility to your party or raid with  Create Soulwell,  Demonic Gateway,  Soulstone and  Ritual of Summoning.",
+                "weaknesses": "No immunity.\nVery limited damage output while moving, even with  Conflagrate being used well during movement."
+            }           
+        ]
+    },
+    {
+        "id": 13,
+        "img": "https://bnetcmsus-a.akamaihd.net/cms/gallery/ES2Z2LW5XBUX1378517223679.jpg",
+        "title": "Warrior",
+        "description": "For as long as war has raged, heroes from every race have aimed to master the art of battle. Warriors combine strength, leadership, and a vast knowledge of arms and armor to wreak havoc in glorious combat. Some protect from the front lines with shields, locking down enemies while allies support the warrior from behind with spell and bow. Others forgo the shield and unleash their rage at the closest threat with a variety of deadly weapons.\n\nWarriors can DPS as the Arms and Fury specializations, or tank as Protection.",
+        "guides": [
+            {
+                "id": 1,
+                "img": "https://bunny-wp-pullzone-yxpognpnm6.b-cdn.net/wp-content/uploads/sites/31/2023/08/unnamed-2.jpg",
+                "title": "Arms Warrior",
+                "description": "Arms Warriors are high intensity damage dealers which specialize in bleeds, proc gameplay, and execute damage. The rotation leads off with a combination of  Mortal Strike,  Overpower, and  Rend, punctuated by periods of burst damage from  Colossus Smash, before ending the encounter by way of heavy  Execute. Their rotation is very resource intensive, but it is generated quickly too, leading to spikey gameplay where the unique resource, Rage, quickly fills and empties in large chunks - the trick being to spend enough to keep from overcapping, while not spending so much that you starve and are unable to fill global cooldowns. Because nearly every ability is a resource spender, Arms Warriors always need to think a few steps ahead.",
+                "strengths": "Strong priority damage to targets below 35% health.\nBursty multitarget cooldowns.\nStrong burst mobility and gap closers.\nGood personal defensive abilities and a raid-wide defensive cooldown.",
+                "weaknesses": "Reliant on Enhancement Shaman's Windfury Totem to maximize performance.\nVery specialized builds, focusing on either single target or multitarget damage, but not both at the same time.\nVery susceptible to downtime due to the lack of ranged abilities or passive resource generation.\nMinimum range restrictions and cooldowns can limit that mobility.\nLack of damage immunity and self healing."
+            },
+            {
+                "id": 2,
+                "img": "https://static.icy-veins.com/images/wow/class-guides/og-image-warrior.jpg",
+                "title": "Fury Warrior",
+                "description": "Fury Warriors have a fast-paced playstyle which focuses on sustained damage rather than spikes of big burst. With only one Rage spending ability, the goal of the rotation is simple: generate enough rage to cast  Rampage and maintain  Enrage, although a multitude of different abilities will be used along the way.\n\nFury Warrior is a good spec for players looking for a spec that is always active, because every other ability is a resource generator and has a short or no cooldown, without any downtime spent waiting for something to do. This makes it highly engaging and proves that a specialization doesn't need to be complicated in order to be fun.",
+                "strengths": "Excels at dynamically swapping between single target and multitarget.\nBursty multitarget cooldowns every 45 or 90 seconds.\nStrong burst mobility and gap closers.\nGood personal defensive abilities and a raid-wide defensive cooldown.",
+                "weaknesses": "Very susceptible to downtime due to the lack of ranged attacks or passive resource generation.\nWeak sustained single target damage and only mediocre sustained multitarget.\nMinimum range restrictions and cooldowns can limit mobility in bad situations.\nLack of damage immunity or cheat death mechanics."
+            },{
+                "id": 3,
+                "img": "https://simple-carry.com/cdn/shop/articles/warrior-protection-wow-dragonflight-talents-builds-guide-raidline-848x636_1445x.jpg?v=1688165843",
+                "title": "Protection Warrior",
+                "description": "Protection Warriors are World of Warcraft’s original tank spec. Along with Protection Paladins, they are one of the two tank specs that use a shield and a one-handed weapon. Protection Warriors are the spec that most fits into the archetypal “tank” role from other RPGs and tabletop games like Dungeons & Dragons.\n\nProtection Warrior is the perfect spec for players looking for a classic tanking feel.",
+                "strengths": "Strong offensive cooldowns that can be frequently used.\nShort CD on defensive cooldowns which can cover alot mechanics if spaced out correctly.\nLeap and Charge provide excellent mobility.\n Shield Block, the single most overpowered mitigation in the game. BDKs hate you for it.\n Spell Reflection. Can turn your weakness into your strengths in mythic plus.\nDefensive consistency. Maintaining 100% Shield Block uptime is possible, which makes damage intake very consistent.\n Spell Block is incredibly powerful allowing you to reduce most magic dmg intake up to 100% with a crit block for 30 seconds!",
+                "weaknesses": "Susceptible to damage if you let Shield Block fall off or turn your back to your enemies.\nSelf-healing does not scale with damage taken like VDH or BDKs do.\nManaging defensive cooldowns can take high degree of skill, awareness and encounter knowledge\nWeak against unblockable/non-reflectable damage, such as very frequent damage over time events, requires ahead of time knowledge to use CDs against."
+            }           
+        ]
     }
 ]
